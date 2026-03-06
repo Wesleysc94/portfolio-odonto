@@ -2,8 +2,8 @@ import ThemeToggle from './components/ThemeToggle';
 import Hero from './components/Hero';
 import Positioning from './components/Positioning';
 import ProblemSolution from './components/ProblemSolution';
+import Solutions from './components/Solutions';
 import CaseStudy from './components/CaseStudy';
-import Benefits from './components/Benefits';
 import WorkProcess from './components/WorkProcess';
 import AboutStudio from './components/AboutStudio';
 import FooterCTA from './components/FooterCTA';
@@ -22,7 +22,7 @@ function App() {
         <Hero />
         <Positioning />
         <ProblemSolution />
-        <Benefits />
+        <Solutions />
         <CaseStudy />
         <WorkProcess />
         <AboutStudio />

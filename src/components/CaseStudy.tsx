@@ -43,7 +43,7 @@ export default function CaseStudy() {
                     variants={textVariants}
                     className="flex flex-col items-start z-10 w-full"
                 >
-                    <span className="text-teal dark:text-gold font-sans font-semibold tracking-wider uppercase text-sm mb-4">
+                    <span className="text-cyan-600 dark:text-cyan-400 font-sans font-semibold tracking-wider uppercase text-sm mb-4">
                         Projetos Demonstrativos
                     </span>
                     <h2 className="text-3xl md:text-5xl font-serif text-slate-900 dark:text-zinc-50 mb-6 leading-tight">
@@ -56,7 +56,7 @@ export default function CaseStudy() {
                         href="https://aura-odonto-demo-site.vercel.app/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group flex gap-3 items-center px-8 py-4 border border-teal text-teal dark:border-gold dark:text-gold rounded-full font-sans font-bold uppercase tracking-widest text-sm hover:bg-teal hover:text-white dark:hover:bg-gold dark:hover:text-dark transition-all duration-300"
+                        className="group flex gap-3 items-center px-8 py-4 border border-cyan-600 text-cyan-700 dark:border-cyan-500 dark:text-cyan-400 rounded-full font-sans font-bold uppercase tracking-widest text-sm hover:bg-cyan-600 hover:text-white dark:hover:bg-cyan-500 dark:hover:text-dark transition-all duration-300"
                     >
                         Ver projeto
                         <ExternalLink className="w-5 h-5 group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform" />
@@ -66,7 +66,7 @@ export default function CaseStudy() {
                 {/* Coluna Direita: Imagens/Mockups */}
                 <div className="relative w-full h-full flex justify-center items-center py-10">
                     {/* Efeito luminoso de fundo para o mockup */}
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-teal/15 dark:bg-gold/15 rounded-full blur-[80px] pointer-events-none" />
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-cyan-500/10 dark:bg-cyan-500/15 rounded-full blur-[80px] pointer-events-none" />
 
                     <motion.div
                         initial="hidden"
@@ -81,13 +81,13 @@ export default function CaseStudy() {
                                 variants={imageVariants}
                                 src="/mockups/IMG_3938.PNG"
                                 alt="Aura Odonto Light Mode Solo"
-                                className="w-full rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] dark:shadow-[0_10px_40px_-10px_rgba(255,255,255,0.05)] border border-black/5 dark:border-white/5 hover:scale-105 transition-transform duration-500 hover:z-20 relative"
+                                className="w-full rounded-2xl shadow-[0_10px_40px_-10px_rgba(8,145,178,0.1)] border border-black/5 dark:border-white/5 hover:scale-[1.08] hover:shadow-[0_0_30px_rgba(8,145,178,0.3)] transition-all duration-500 hover:z-20 relative"
                             />
                             <motion.img
                                 variants={imageVariants}
                                 src="/mockups/IMG_3950.PNG"
                                 alt="Aura Odonto Light Mode Combined"
-                                className="w-full rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] dark:shadow-[0_10px_40px_-10px_rgba(255,255,255,0.05)] border border-black/5 dark:border-white/5 hover:scale-105 transition-transform duration-500 hover:z-20 relative"
+                                className="w-full rounded-2xl shadow-[0_10px_40px_-10px_rgba(8,145,178,0.1)] border border-black/5 dark:border-white/5 hover:scale-[1.08] hover:shadow-[0_0_30px_rgba(8,145,178,0.3)] transition-all duration-500 hover:z-20 relative"
                             />
                         </div>
                         {/* Mockup Coluna 2 (Dark Mode Versions) */}
@@ -96,13 +96,13 @@ export default function CaseStudy() {
                                 variants={imageVariants}
                                 src="/mockups/IMG_3942.PNG"
                                 alt="Aura Odonto Dark Mode Solo"
-                                className="w-full rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] dark:shadow-[0_10px_40px_-10px_rgba(255,255,255,0.05)] border border-black/5 dark:border-white/5 hover:scale-105 transition-transform duration-500 hover:z-20 relative"
+                                className="w-full rounded-2xl shadow-[0_10px_40px_-10px_rgba(8,145,178,0.1)] border border-black/5 dark:border-white/5 hover:scale-[1.08] hover:shadow-[0_0_30px_rgba(8,145,178,0.3)] transition-all duration-500 hover:z-20 relative"
                             />
                             <motion.img
                                 variants={imageVariants}
                                 src="/mockups/IMG_3937.PNG"
                                 alt="Aura Odonto Dark Mode Combined"
-                                className="w-full rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] dark:shadow-[0_10px_40px_-10px_rgba(255,255,255,0.05)] border border-black/5 dark:border-white/5 hover:scale-105 transition-transform duration-500 hover:z-20 relative"
+                                className="w-full rounded-2xl shadow-[0_10px_40px_-10px_rgba(8,145,178,0.1)] border border-black/5 dark:border-white/5 hover:scale-[1.08] hover:shadow-[0_0_30px_rgba(8,145,178,0.3)] transition-all duration-500 hover:z-20 relative"
                             />
                         </div>
                     </motion.div>
