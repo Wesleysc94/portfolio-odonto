@@ -1,22 +1,15 @@
-import { Zap, Smartphone, Settings } from 'lucide-react';
+import { LayoutTemplate, Zap, MousePointerClick } from 'lucide-react';
 import { motion, type Variants } from 'framer-motion';
 
-export default function Benefits() {
+export default function Services() {
     const containerVariants: Variants = {
         hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: { staggerChildren: 0.2 }
-        }
+        visible: { opacity: 1, transition: { staggerChildren: 0.2 } }
     };
 
     const cardVariants: Variants = {
         hidden: { opacity: 0, y: 30 },
-        visible: {
-            opacity: 1,
-            y: 0,
-            transition: { duration: 0.6, ease: "easeOut" }
-        }
+        visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
     };
 
     return (
@@ -31,9 +24,10 @@ export default function Benefits() {
                 }}
                 className="text-center mb-16"
             >
-                <h2 className="text-3xl md:text-5xl font-serif text-slate-800 dark:text-white leading-tight">
-                    Tecnologia silenciosa. <span className="italic text-teal dark:text-gold">Resultados reais.</span>
+                <h2 className="text-3xl md:text-5xl font-serif text-slate-800 dark:text-white leading-tight mb-4">
+                    O que <span className="italic text-teal dark:text-gold">Entregamos</span>
                 </h2>
+                <p className="text-slate-600 dark:text-zinc-400 font-sans text-lg font-light">Soluções digitais desenhadas para negócios que exigem resultados superiores.</p>
             </motion.div>
 
             <motion.div
@@ -46,33 +40,33 @@ export default function Benefits() {
                 {/* Card 1 */}
                 <motion.div variants={cardVariants} className="glass p-8 rounded-3xl flex flex-col items-start gap-4 hover:-translate-y-2 transition-transform duration-300">
                     <div className="w-14 h-14 rounded-2xl bg-teal/10 text-teal dark:bg-gold/10 dark:text-gold flex items-center justify-center">
-                        <Zap className="w-7 h-7" />
+                        <LayoutTemplate className="w-7 h-7" />
                     </div>
-                    <h3 className="text-xl font-sans font-semibold text-slate-900 dark:text-zinc-50">Velocidade Extrema (Nota 90+)</h3>
+                    <h3 className="text-xl font-sans font-semibold text-slate-900 dark:text-zinc-50">Website Premium</h3>
                     <p className="text-slate-600 dark:text-zinc-400 font-light leading-relaxed">
-                        Sites otimizados que carregam em menos de 2 segundos. Sem perda de pacientes impacientes.
+                        Sites modernos, responsivos e visualmente profissionais projetados para valorizar a marca da sua empresa.
                     </p>
                 </motion.div>
 
                 {/* Card 2 */}
                 <motion.div variants={cardVariants} className="glass p-8 rounded-3xl flex flex-col items-start gap-4 hover:-translate-y-2 transition-transform duration-300">
                     <div className="w-14 h-14 rounded-2xl bg-teal/10 text-teal dark:bg-gold/10 dark:text-gold flex items-center justify-center">
-                        <Smartphone className="w-7 h-7" />
+                        <Zap className="w-7 h-7" />
                     </div>
-                    <h3 className="text-xl font-sans font-semibold text-slate-900 dark:text-zinc-50">Mobile First</h3>
+                    <h3 className="text-xl font-sans font-semibold text-slate-900 dark:text-zinc-50">Performance</h3>
                     <p className="text-slate-600 dark:text-zinc-400 font-light leading-relaxed">
-                        Experiência perfeita no smartphone, onde 80% do seu tráfego qualificado fará o primeiro contato.
+                        Sites extremamente rápidos, hospedados em infraestrutura moderna (Edge Networks) e otimizados para qualquer dispositivo móvel.
                     </p>
                 </motion.div>
 
                 {/* Card 3 */}
                 <motion.div variants={cardVariants} className="glass p-8 rounded-3xl flex flex-col items-start gap-4 hover:-translate-y-2 transition-transform duration-300">
                     <div className="w-14 h-14 rounded-2xl bg-teal/10 text-teal dark:bg-gold/10 dark:text-gold flex items-center justify-center">
-                        <Settings className="w-7 h-7" />
+                        <MousePointerClick className="w-7 h-7" />
                     </div>
-                    <h3 className="text-xl font-sans font-semibold text-slate-900 dark:text-zinc-50">100% Done-For-You</h3>
+                    <h3 className="text-xl font-sans font-semibold text-slate-900 dark:text-zinc-50">Conversão de Leads</h3>
                     <p className="text-slate-600 dark:text-zinc-400 font-light leading-relaxed">
-                        Você aprova a estética, nós cuidamos de todo o código, hospedagem e integração. Zero dor de cabeça para você e sua secretária.
+                        Estrutura pensada e validada para facilitar o contato e gerar constantemente novos contatos e orçamentos para sua equipe comercial.
                     </p>
                 </motion.div>
             </motion.div>

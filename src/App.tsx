@@ -1,8 +1,11 @@
 import ThemeToggle from './components/ThemeToggle';
 import Hero from './components/Hero';
+import Positioning from './components/Positioning';
+import ProblemSolution from './components/ProblemSolution';
 import CaseStudy from './components/CaseStudy';
 import Benefits from './components/Benefits';
-import NicheExpansion from './components/NicheExpansion';
+import WorkProcess from './components/WorkProcess';
+import AboutStudio from './components/AboutStudio';
 import FooterCTA from './components/FooterCTA';
 
 function App() {
@@ -17,9 +20,13 @@ function App() {
 
       <main className="overflow-x-hidden">
         <Hero />
-        <CaseStudy />
+        <Positioning />
+        <ProblemSolution />
         <Benefits />
-        <NicheExpansion />
+        <CaseStudy />
+        <WorkProcess />
+        <AboutStudio />
+        {/* NicheExpansion será apagado e não deve mais integrar a main */}
       </main>
 
       <FooterCTA />
