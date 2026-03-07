@@ -17,10 +17,10 @@ export default function Solutions() {
             {/* Ambient Background Base to blend with previous sections */}
             <div className="absolute inset-0 bg-transparent" />
 
-            {/* Tech Grid Background (Subtle) com Fade no Topo e na Base */}
+            {/* Tech Grid Background with Gradient Mask */}
             <div className="absolute inset-0 w-full h-full bg-[linear-gradient(to_right,#a3a3a315_1px,transparent_1px),linear-gradient(to_bottom,#a3a3a315_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:linear-gradient(to_bottom,transparent_0%,black_15%,black_85%,transparent_100%)] animate-gridFlow pointer-events-none" />
 
-            {/* Ambient Background Lights - Extended (Otimizado p/ Contrast e GPU) */}
+            {/* Hardware-accelerated Ambient Lights */}
             <div className="absolute top-1/2 left-0 w-[300px] h-[300px] md:w-[800px] md:h-[800px] bg-cyan-600/5 aura:bg-amber-600/5 ruby:bg-rose-700/5 rounded-full blur-[60px] md:blur-[100px] opacity-10 md:opacity-100 -translate-y-1/2 -translate-x-1/2 pointer-events-none" />
             <div className="absolute top-1/2 right-0 w-[300px] h-[300px] md:w-[800px] md:h-[800px] bg-indigo-500/5 rounded-full blur-[60px] md:blur-[100px] opacity-10 md:opacity-100 -translate-y-1/2 translate-x-1/2 pointer-events-none" />
 
@@ -50,7 +50,7 @@ export default function Solutions() {
                     variants={containerVariants}
                     className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 relative z-10"
                 >
-                    {/* Card 1: Website Institucional */}
+                    {/* Service Card 1 */}
                     <motion.div
                         variants={cardVariants}
                         className="bg-gradient-to-br from-white/60 to-white/10 dark:from-white/5 dark:to-transparent aura:from-amber-100/5 aura:to-transparent ruby:from-rose-100/5 ruby:to-transparent backdrop-blur-2xl p-10 md:p-14 lg:p-16 rounded-[2.5rem] border border-cyan-200/20 dark:border-white/5 aura:border-white/5 ruby:border-white/5 flex flex-col items-start gap-8 transition-all duration-500 hover:-translate-y-2 shadow-[0_20px_40px_-10px_rgba(0,0,0,0.05)] dark:shadow-[0_20px_40px_-10px_rgba(0,0,0,0.3)] aura:shadow-[0_20px_40px_-10px_rgba(245,158,11,0.05)] ruby:shadow-[0_20px_40px_-10px_rgba(225,29,72,0.05)] hover:shadow-[0_20px_40px_-5px_rgba(8,145,178,0.15)] dark:hover:shadow-[0_30px_50px_-10px_rgba(0,0,0,0.6)] group cursor-default box-border"
@@ -67,7 +67,7 @@ export default function Solutions() {
                         </div>
                     </motion.div>
 
-                    {/* Card 2: Landing Page Alta Conversão */}
+                    {/* Service Card 2 */}
                     <motion.div
                         variants={cardVariants}
                         className="bg-gradient-to-br from-white/60 to-white/10 dark:from-white/5 dark:to-transparent aura:from-amber-100/5 aura:to-transparent ruby:from-rose-100/5 ruby:to-transparent backdrop-blur-2xl p-10 md:p-14 lg:p-16 rounded-[2.5rem] border border-cyan-200/20 dark:border-white/5 aura:border-white/5 ruby:border-white/5 flex flex-col items-start gap-8 transition-all duration-500 hover:-translate-y-2 shadow-[0_20px_40px_-10px_rgba(0,0,0,0.05)] dark:shadow-[0_20px_40px_-10px_rgba(0,0,0,0.3)] aura:shadow-[0_20px_40px_-10px_rgba(245,158,11,0.05)] ruby:shadow-[0_20px_40px_-10px_rgba(225,29,72,0.05)] hover:shadow-[0_20px_40px_-5px_rgba(8,145,178,0.15)] dark:hover:shadow-[0_30px_50px_-10px_rgba(0,0,0,0.6)] group cursor-default box-border mt-0 md:mt-12"

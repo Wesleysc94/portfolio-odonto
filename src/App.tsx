@@ -11,7 +11,7 @@ import LeadFormModal from './components/LeadFormModal';
 import BackToTop from './components/BackToTop';
 import { useState } from 'react';
 
-// Divisor premium com GLOW para criar transição suave ("degradê") entre seções
+// Section divider with gradient and glow effects
 const Divider = () => (
     <div className="w-full max-w-6xl mx-auto h-px bg-gradient-to-r from-transparent via-cyan-900/40 dark:via-cyan-600/60 aura:via-amber-600/60 ruby:via-rose-600/60 to-transparent relative opacity-60 transition-colors duration-500">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1/4 h-[2px] bg-gradient-to-r from-transparent via-cyan-400/40 dark:via-cyan-400/30 aura:via-amber-400/30 ruby:via-rose-400/30 to-transparent blur-[2px] transition-colors duration-500" />
@@ -31,16 +31,15 @@ function App() {
 
             <div className="fixed bottom-6 left-0 w-full px-6 z-50 flex justify-between items-end pointer-events-none">
 
-                {/* Toggle Right/Left */}
+                {/* Theme Toggle Button */}
                 <div className="pointer-events-auto">
                     <div className="glass rounded-full shadow-[0_4px_16px_rgba(0,0,0,0.1)]">
                         <ThemeToggle />
                     </div>
                 </div>
 
-                {/* Whatsapp Right */}
+                {/* WhatsApp Floating Action Button */}
                 <div className="pointer-events-auto relative">
-                    {/* Efeito Pulse/Ping Pulsante no Whatsapp */}
                     <div className="absolute inset-0 bg-[#25D366] rounded-full animate-ping opacity-60" style={{ animationDuration: '3s' }}></div>
                     <a
                         href="#footer-cta"

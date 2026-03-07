@@ -39,7 +39,7 @@ export default function Benefits() {
                 variants={containerVariants}
                 className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10"
             >
-                {/* Card 1 */}
+                {/* Benefit Card 1 */}
                 <motion.div variants={cardVariants} className="bg-white/90 dark:bg-zinc-900/80 aura:bg-[#0a0a0a]/90 ruby:bg-[#0a0a0a]/90 backdrop-blur-sm lg:backdrop-blur-md p-8 lg:p-10 rounded-[2rem] border border-slate-200/60 dark:border-white/10 aura:border-white/10 ruby:border-white/10 flex flex-col items-start gap-6 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_10px_40px_-5px_rgba(0,0,0,0.1)] dark:hover:shadow-[0_10px_40px_-5px_rgba(0,0,0,0.3)] group cursor-default">
                     <div className="w-16 h-16 rounded-2xl bg-cyan-50 dark:bg-cyan-900/30 text-cyan-600 aura:text-amber-500 ruby:text-rose-600 dark:text-cyan-400 aura:text-amber-400 ruby:text-rose-400 flex items-center justify-center shadow-sm dark:shadow-none transition-transform duration-500 group-hover:scale-110">
                         <LayoutTemplate className="w-8 h-8 stroke-[1.5]" />
@@ -50,7 +50,7 @@ export default function Benefits() {
                     </p>
                 </motion.div>
 
-                {/* Card 2 */}
+                {/* Benefit Card 2 */}
                 <motion.div variants={cardVariants} className="bg-white/90 dark:bg-zinc-900/80 aura:bg-[#0a0a0a]/90 ruby:bg-[#0a0a0a]/90 backdrop-blur-sm lg:backdrop-blur-md p-8 lg:p-10 rounded-[2rem] border border-slate-200/60 dark:border-white/10 aura:border-white/10 ruby:border-white/10 flex flex-col items-start gap-6 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_10px_40px_-5px_rgba(0,0,0,0.1)] dark:hover:shadow-[0_10px_40px_-5px_rgba(0,0,0,0.3)] group cursor-default">
                     <div className="w-16 h-16 rounded-2xl bg-cyan-50 dark:bg-cyan-900/30 text-cyan-600 aura:text-amber-500 ruby:text-rose-600 dark:text-cyan-400 aura:text-amber-400 ruby:text-rose-400 flex items-center justify-center shadow-sm dark:shadow-none transition-transform duration-500 group-hover:scale-110">
                         <Zap className="w-8 h-8 stroke-[1.5]" />
@@ -61,7 +61,7 @@ export default function Benefits() {
                     </p>
                 </motion.div>
 
-                {/* Card 3 */}
+                {/* Benefit Card 3 */}
                 <motion.div variants={cardVariants} className="bg-white/90 dark:bg-zinc-900/80 aura:bg-[#0a0a0a]/90 ruby:bg-[#0a0a0a]/90 backdrop-blur-sm lg:backdrop-blur-md p-8 lg:p-10 rounded-[2rem] border border-slate-200/60 dark:border-white/10 aura:border-white/10 ruby:border-white/10 flex flex-col items-start gap-6 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_10px_40px_-5px_rgba(0,0,0,0.1)] dark:hover:shadow-[0_10px_40px_-5px_rgba(0,0,0,0.3)] group cursor-default">
                     <div className="w-16 h-16 rounded-2xl bg-cyan-50 dark:bg-cyan-900/30 text-cyan-600 aura:text-amber-500 ruby:text-rose-600 dark:text-cyan-400 aura:text-amber-400 ruby:text-rose-400 flex items-center justify-center shadow-sm dark:shadow-none transition-transform duration-500 group-hover:scale-110">
                         <MousePointerClick className="w-8 h-8 stroke-[1.5]" />

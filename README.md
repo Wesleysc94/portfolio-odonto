@@ -1,73 +1,65 @@
-# React + TypeScript + Vite
+# Wes Digital Studio 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
+  <img src="public/mockups/versao dark desktop.PNG" alt="Wes Digital Studio Preview" width="600"/>
+  
+  <p><strong>Premium Digital Presence & High-Conversion Landing Pages</strong></p>
+</div>
 
-Currently, two official plugins are available:
+## 💎 About the Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Wes Digital Studio is my professional portfolio and digital agency website. Designed to convert high-ticket clients, this application abandons slow, bloat-heavy solutions like WordPress in favor of a lightning-fast, highly modern architecture built with React, Vite, and Tailwind CSS. 
 
-## React Compiler
+The focus is on delivering a **premium user experience** with seamless animations, deep performance optimizations (sub-millisecond loads), and responsive glassmorphism aesthetics.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Technical Stack (Front-End Excellence)
 
-## Expanding the ESLint configuration
+*   **Core:** React 18, TypeScript, Vite
+*   **Styling:** Tailwind CSS (Custom Design System, Dynamic Gradients, CSS Masking)
+*   **Animation Engine:** Framer Motion (Hardware-accelerated CSS animations, staggering, scroll reveals)
+*   **Icons:** Lucide React
+*   **Carousel/Sliders:** Swiper (Fade Effects, Hardware-accelerated transitions)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ⚡ Architectural Highlights
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+*   **Zero-Jank Animations:** Utilization of `transform` and `opacity` exclusively for animations like the floating Hero button, ensuring the main thread is never blocked.
+*   **Dynamic Theme Matrix:** A complex but highly performant custom theme system (Cyan, Dark, Aura, Ruby) implemented entirely via CSS Variables within Tailwind, allowing instantaneous switching without re-renders.
+*   **CSS Masking & Radial Gradients:** Advanced CSS techniques used for the background grid and glow effects, providing depth and luxury without heavy asset loading.
+*   **Mobile-First Performance:** Otimizations specifically tailored for mobile browsers to retain the premium feel without sacrificing load speed.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 💻 Running Locally
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+To run this project on your local machine:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/Wesleysc94/portfolio-odonto.git
+    cd portfolio-odonto
+    ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+3.  **Start the development server (Vite):**
+    ```bash
+    npm run dev
+    ```
+
+4.  **Build for production:**
+    ```bash
+    npm run build
+    ```
+
+## 📬 Contact & Hire me
+
+Available for Lead Front-End and Full-Stack roles.
+
+*   **LinkedIn:** [Wesley Silva](#) *(Link coming soon)*
+*   **Workana:** [Wesley Silva](#) *(Link coming soon)*
+
+---
+<div align="center">
+  <sub>Built with passion for UI Engineering.</sub>
+</div>

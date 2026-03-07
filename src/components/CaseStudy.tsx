@@ -8,7 +8,7 @@ import 'swiper/css';
 import 'swiper/css/effect-fade';
 
 export default function CaseStudy() {
-    // Variantes de texto
+    /* Content Animation Variants */
     const textVariants: Variants = {
         hidden: { opacity: 0, x: -50 },
         visible: {
@@ -29,7 +29,7 @@ export default function CaseStudy() {
     return (
         <section id="case-study" className="py-12 md:py-28 px-6 relative max-w-screen-2xl mx-auto !overflow-visible z-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-32 items-center !overflow-visible">
-                {/* Coluna Esquerda: Textos (Scroll Reveal) */}
+                {/* Left Column: Descriptive Content */}
                 <motion.div
                     initial="hidden"
                     whileInView="visible"
@@ -57,10 +57,10 @@ export default function CaseStudy() {
                     </a>
                 </motion.div>
 
-                {/* Coluna Direita: Imagens/Mockups */}
+                {/* Right Column: Project Showcase Slider */}
                 <div className="relative w-full h-full flex justify-center items-center py-10 lg:pl-10 !overflow-visible">
 
-                    {/* Fundo elegante e difuso, sem bolas sólidas, usando radial-gradient seguro e escalável */}
+                    {/* Scalable Radial Gradient Ambient Background */}
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,theme(colors.cyan.400/0.08)_0%,transparent_60%)] dark:bg-[radial-gradient(circle_at_center,theme(colors.cyan.500/0.15)_0%,transparent_60%)] aura:bg-[radial-gradient(circle_at_center,theme(colors.amber.500/0.15)_0%,transparent_60%)] ruby:bg-[radial-gradient(circle_at_center,theme(colors.rose.600/0.15)_0%,transparent_60%)] pointer-events-none z-0" />
 
                     <motion.div
@@ -99,7 +99,7 @@ export default function CaseStudy() {
                             </Swiper>
                         </div>
 
-                        {/* Controles de Navegação Discretos */}
+                        {/* Custom Navigation Controls */}
                         <div className="flex gap-4 items-center justify-center mt-8">
                             <button className="swiper-button-prev-custom group flex items-center justify-center w-12 h-12 rounded-full border border-slate-300 dark:border-zinc-700 bg-transparent text-slate-600 dark:text-zinc-400 aura:text-zinc-400 ruby:text-zinc-400 hover:text-cyan-600 aura:text-amber-500 ruby:text-rose-600 dark:hover:text-cyan-400 hover:border-cyan-500 aura:hover:border-amber-500 ruby:hover:border-rose-500 aura:border-amber-500 ruby:border-rose-500 transition-all duration-300">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:-translate-x-1 transition-transform"><path d="m15 18-6-6 6-6" /></svg>

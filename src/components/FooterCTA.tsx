@@ -6,7 +6,7 @@ import InstagramButton from './InstagramButton';
 export default function FooterCTA({ onOpenModal }: { onOpenModal?: () => void }) {
     return (
         <footer id="footer-cta" className="relative mt-10 py-20 px-6 overflow-hidden">
-            {/* Background Section-Specific */}
+            {/* Section-Specific Ambient Background */}
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-[80vw] h-[80vw] max-w-[600px] max-h-[600px] bg-cyan-600/5 aura:bg-amber-600/5 ruby:bg-rose-700/5 rounded-full blur-2xl md:blur-[100px] opacity-40 md:opacity-100 pointer-events-none" />
 
             <motion.div
