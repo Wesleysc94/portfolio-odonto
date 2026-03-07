@@ -48,12 +48,12 @@ export default function BackToTop() {
                         onClick={scrollToTop}
                         aria-label="Voltar ao início"
                         className="p-3 rounded-full flex items-center justify-center
-                                 bg-white/70 dark:bg-zinc-900/40 
-                                 border border-white/40 dark:border-white/5 
+                                 bg-white/70 dark:bg-zinc-900/50 aura:bg-zinc-900/80 ruby:bg-zinc-900/80
+                                 border border-white/40 dark:border-white/5 aura:border-amber-500/20 ruby:border-rose-500/20
                                  shadow-lg shadow-cyan-600/10 aura:shadow-amber-500/10 ruby:shadow-rose-600/10
                                  backdrop-blur-xl
                                  text-cyan-700 dark:text-cyan-400 aura:text-amber-500 ruby:text-rose-500
-                                 hover:bg-cyan-50 dark:hover:bg-zinc-800 aura:hover:bg-amber-50/5 ruby:hover:bg-rose-50/5
+                                 hover:bg-cyan-50 dark:hover:bg-zinc-800 aura:hover:bg-zinc-800 ruby:hover:bg-zinc-800
                                  transition-all duration-300"
                     >
                         <ChevronUp className="w-6 h-6" />
