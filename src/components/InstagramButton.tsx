@@ -35,7 +35,7 @@ export default function InstagramButton({ className = '', variant = 'floating' }
             target="_blank"
             rel="noopener noreferrer"
             title="Acompanhe pelo Instagram"
-            className={`${baseClasses} w-10 h-10 md:w-12 md:h-12 rounded-full border border-slate-200 dark:border-white/5 aura:border-white/5 ruby:border-white/5 bg-transparent backdrop-blur-md hover:border-transparent ${className} animate-[float_4s_ease-in-out_infinite] opacity-60 hover:opacity-100 hover:scale-110 active:scale-95`}
+            className={`${baseClasses} w-10 h-10 md:w-12 md:h-12 rounded-full border border-slate-200 dark:border-white/5 aura:border-white/5 ruby:border-white/5 bg-transparent backdrop-blur-md hover:border-transparent ${className} animate-float opacity-60 hover:opacity-100 hover:scale-110 active:scale-95`}
         >
             <div className={`absolute inset-0 rounded-full ${instagramGradient} opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />
             <span className="relative z-10 flex items-center justify-center text-slate-500 dark:text-zinc-500 aura:text-zinc-500 ruby:text-zinc-500 group-hover:text-white transition-colors duration-300">
