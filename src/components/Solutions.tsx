@@ -35,7 +35,7 @@ export default function Solutions() {
                     }}
                     className="text-center mb-32 relative z-10"
                 >
-                    <h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-[5.5rem] font-serif text-slate-900 dark:text-white leading-[1.1] md:leading-[1.05] tracking-tight mb-8 text-balance">
+                    <h2 className="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl font-serif text-slate-900 dark:text-white leading-[1.1] md:leading-[1.05] tracking-tight mb-8">
                         Soluções de alta performance para <span className="italic text-cyan-600 dark:text-cyan-400 font-light block mt-4">diferentes objetivos.</span>
                     </h2>
                     <p className="text-slate-600 dark:text-zinc-400 font-sans text-lg sm:text-xl md:text-2xl font-light max-w-3xl mx-auto leading-relaxed tracking-wide">

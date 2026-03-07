@@ -38,11 +38,11 @@ export default function AboutStudio() {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="flex flex-col text-center md:text-left"
                 >
-                    <h2 className="text-3xl sm:text-4xl md:text-6xl font-serif text-slate-900 dark:text-white mb-6 md:mb-8 leading-[1.1] tracking-tight text-balance">
+                    <h2 className="text-3xl sm:text-4xl md:text-6xl font-serif text-slate-900 dark:text-white mb-6 md:mb-8 leading-[1.1] tracking-tight ">
                         Sobre a <span className="italic text-cyan-600 dark:text-cyan-400 font-light">Wes Digital Studio</span>
                     </h2>
 
-                    <div className="space-y-6 md:space-y-8 text-slate-600 dark:text-zinc-400 font-sans text-lg sm:text-xl md:text-2xl font-light leading-relaxed tracking-wide text-balance">
+                    <div className="space-y-6 md:space-y-8 text-slate-600 dark:text-zinc-400 font-sans text-lg sm:text-xl md:text-2xl font-light leading-relaxed tracking-wide ">
                         <p>
                             A Wes Digital Studio foi criada com o objetivo de ajudar empresas a transmitir <strong className="font-semibold text-slate-800 dark:text-zinc-200">autoridade implacável</strong> na internet através de interfaces modernas, responsivas e altamente estruturadas.
                         </p>
