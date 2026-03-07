@@ -10,10 +10,10 @@ export default function Positioning() {
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                 >
-                    <span className="text-cyan-600 dark:text-cyan-400 font-sans font-bold tracking-[0.2em] uppercase text-sm mb-6 block">
+                    <span className="text-zinc-500 dark:text-zinc-400 font-sans font-medium tracking-[0.2em] uppercase text-xs md:text-sm mb-6 block">
                         O Nosso Foco
                     </span>
-                    <h2 className="text-4xl md:text-6xl lg:text-7xl font-serif text-slate-900 dark:text-white mb-10 leading-[1.1] tracking-tight text-balance">
+                    <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-serif text-slate-900 dark:text-white mb-8 md:mb-10 leading-[1.15] md:leading-[1.1] tracking-tight text-balance">
                         Especialistas em <span className="italic font-light">presença digital</span> para estética premium.
                     </h2>
                 </motion.div>
@@ -23,7 +23,7 @@ export default function Positioning() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.6, delay: 0.1 }}
-                    className="text-slate-600 dark:text-zinc-400 font-sans text-lg md:text-xl font-light leading-relaxed max-w-3xl mx-auto mb-16"
+                    className="text-slate-600 dark:text-zinc-400 font-sans text-base md:text-lg lg:text-xl font-light leading-relaxed max-w-3xl mx-auto mb-12 md:mb-16 text-balance"
                 >
                     A Wes Digital Studio ajuda empresas e clínicas a transformar sua presença digital em uma vitrine profissional que transmite confiança e gera novos clientes.
                 </motion.p>

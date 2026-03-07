@@ -4,7 +4,7 @@ export default function AboutStudio() {
     return (
         <section className="py-32 md:py-48 px-6 relative w-full overflow-visible flex flex-col items-center">
             {/* Background elements */}
-            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-cyan-600/5 dark:bg-cyan-500/5 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/3 pointer-events-none" />
+            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-zinc-600/5 dark:bg-zinc-500/5 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/3 pointer-events-none" />
 
             <div className="max-w-5xl mx-auto z-10 relative flex flex-col md:flex-row gap-16 md:gap-24 items-center">
 
@@ -15,10 +15,10 @@ export default function AboutStudio() {
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.8, ease: "easeOut", type: "spring", stiffness: 50 }}
                     whileHover={{ scale: 1.05 }}
-                    className="w-48 h-48 md:w-72 md:h-72 flex-shrink-0 rounded-full border border-cyan-600/20 dark:border-cyan-400/20 flex flex-col items-center justify-center relative group cursor-default shadow-[0_0_40px_rgba(8,145,178,0.1)] hover:shadow-[0_0_60px_rgba(8,145,178,0.2)]"
+                    className="w-48 h-48 md:w-72 md:h-72 flex-shrink-0 rounded-full border border-slate-300 dark:border-zinc-700 bg-white dark:bg-[#0a0a0a] flex flex-col items-center justify-center relative group cursor-default shadow-xl hover:shadow-2xl transition-shadow duration-500"
                 >
-                    <div className="absolute inset-2 border border-cyan-600/30 dark:border-cyan-400/30 rounded-full border-dashed animate-[spin_20s_linear_infinite]" />
-                    <div className="absolute inset-[14px] border border-cyan-500/10 dark:border-cyan-300/10 rounded-full animate-[spin_30s_linear_infinite_reverse]" />
+                    <div className="absolute inset-2 border border-slate-400/30 dark:border-zinc-500/30 rounded-full border-dashed animate-[spin_20s_linear_infinite]" />
+                    <div className="absolute inset-[14px] border border-slate-300/50 dark:border-zinc-400/20 rounded-full animate-[spin_30s_linear_infinite_reverse]" />
 
                     <motion.span
                         animate={{ opacity: [0.7, 1, 0.7] }}
@@ -27,7 +27,7 @@ export default function AboutStudio() {
                     >
                         W
                     </motion.span>
-                    <span className="font-sans text-[10px] md:text-xs tracking-[0.4em] uppercase text-cyan-600 dark:text-cyan-400 mt-4 relative z-10">Studio</span>
+                    <span className="font-sans text-[10px] md:text-xs tracking-[0.4em] uppercase text-zinc-600 dark:text-zinc-400 mt-4 relative z-10">Studio</span>
                 </motion.div>
 
                 {/* Texto Sobre o Estúdio */}
@@ -38,11 +38,11 @@ export default function AboutStudio() {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="flex flex-col text-center md:text-left"
                 >
-                    <h2 className="text-4xl md:text-6xl font-serif text-slate-900 dark:text-white mb-8 leading-[1.1] tracking-tight text-balance">
-                        Sobre a <span className="italic text-cyan-600 dark:text-cyan-400 font-light">Wes Digital Studio</span>
+                    <h2 className="text-3xl sm:text-4xl md:text-6xl font-serif text-slate-900 dark:text-white mb-6 md:mb-8 leading-[1.1] tracking-tight text-balance">
+                        Sobre a <span className="italic text-slate-500 dark:text-zinc-400 font-light">Wes Digital Studio</span>
                     </h2>
 
-                    <div className="space-y-8 text-slate-600 dark:text-zinc-400 font-sans text-xl md:text-2xl font-light leading-relaxed tracking-wide">
+                    <div className="space-y-6 md:space-y-8 text-slate-600 dark:text-zinc-400 font-sans text-lg sm:text-xl md:text-2xl font-light leading-relaxed tracking-wide text-balance">
                         <p>
                             A Wes Digital Studio foi criada com o objetivo de ajudar empresas a transmitir <strong className="font-semibold text-slate-800 dark:text-zinc-200">autoridade implacável</strong> na internet através de interfaces modernas, responsivas e altamente estruturadas.
                         </p>

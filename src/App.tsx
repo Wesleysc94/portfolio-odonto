@@ -10,8 +10,8 @@ import FooterCTA from './components/FooterCTA';
 
 // Divisor premium com GLOW para criar transição suave ("degradê") entre seções
 const Divider = () => (
-  <div className="w-full max-w-6xl mx-auto h-px bg-gradient-to-r from-transparent via-slate-300 dark:via-cyan-900/40 to-transparent relative opacity-60">
-    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1/4 h-[2px] bg-gradient-to-r from-transparent via-cyan-400/40 dark:via-cyan-400/30 to-transparent blur-[2px]" />
+  <div className="w-full max-w-6xl mx-auto h-px bg-gradient-to-r from-transparent via-slate-300 dark:via-zinc-800/60 to-transparent relative opacity-60">
+    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1/4 h-[2px] bg-gradient-to-r from-transparent via-slate-400/40 dark:via-zinc-400/30 to-transparent blur-[2px]" />
   </div>
 );
 
@@ -21,8 +21,8 @@ function App() {
 
       {/* Glow Ambiente Global Espalhado para o Dark Mode não ficar opaco/seco */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
-        <div className="absolute top-[20%] right-[-10%] w-[50vw] h-[50vw] max-w-[800px] max-h-[800px] bg-cyan-900/5 dark:bg-cyan-900/10 blur-[120px] rounded-full mix-blend-screen" />
-        <div className="absolute bottom-[10%] left-[-10%] w-[50vw] h-[50vw] max-w-[800px] max-h-[800px] bg-indigo-900/5 dark:bg-indigo-900/10 blur-[120px] rounded-full mix-blend-screen" />
+        <div className="absolute top-[20%] right-[-10%] w-[50vw] h-[50vw] max-w-[800px] max-h-[800px] bg-slate-900/5 dark:bg-zinc-800/10 blur-[120px] rounded-full mix-blend-screen" />
+        <div className="absolute bottom-[10%] left-[-10%] w-[50vw] h-[50vw] max-w-[800px] max-h-[800px] bg-zinc-900/5 dark:bg-slate-800/10 blur-[120px] rounded-full mix-blend-screen" />
       </div>
 
       {/* Header Fixo Simples / Botão de Tema */}

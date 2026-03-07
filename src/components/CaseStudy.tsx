@@ -37,23 +37,23 @@ export default function CaseStudy() {
                     variants={textVariants}
                     className="flex flex-col items-start z-10 w-full"
                 >
-                    <span className="text-cyan-600 dark:text-cyan-400 font-sans font-bold tracking-[0.2em] uppercase text-sm mb-6">
+                    <span className="text-zinc-500 dark:text-zinc-400 font-sans font-medium tracking-[0.2em] uppercase text-xs md:text-sm mb-6 block">
                         Projetos Demonstrativos
                     </span>
-                    <h2 className="text-5xl md:text-[6rem] lg:text-[7.5rem] xl:text-[8rem] font-serif text-slate-900 dark:text-zinc-50 mb-10 leading-[0.9] tracking-tighter">
+                    <h2 className="text-4xl sm:text-5xl md:text-[6rem] lg:text-[7.5rem] xl:text-[8rem] font-serif text-slate-900 dark:text-zinc-50 mb-6 md:mb-10 leading-[1] md:leading-[0.9] tracking-tighter text-balance">
                         <span className="italic font-light">Aura Odonto</span>
                     </h2>
-                    <p className="text-slate-600 dark:text-zinc-400 font-sans text-xl md:text-2xl mb-14 leading-relaxed font-light tracking-wide max-w-xl text-balance">
+                    <p className="text-slate-600 dark:text-zinc-400 font-sans text-lg sm:text-xl md:text-2xl mb-10 md:mb-14 leading-relaxed font-light tracking-wide max-w-xl text-balance">
                         Demonstração de uma plataforma digital desenvolvida para clínicas odontológicas com foco em experiência do usuário, velocidade e máxima conversão de pacientes nas especializações de maior valor agregado.
                     </p>
                     <a
                         href="https://aura-odonto-demo-site.vercel.app/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group flex gap-3 items-center px-10 py-5 border border-cyan-400 dark:border-cyan-500/50 text-cyan-700 dark:text-cyan-400 rounded-full font-sans font-bold uppercase tracking-[0.2em] text-sm hover:bg-cyan-600 hover:text-white dark:hover:bg-cyan-500 dark:hover:text-[#030712] transition-all duration-300 shadow-xl hover:shadow-[0_20px_40px_-15px_rgba(8,145,178,0.4)]"
+                        className="group flex gap-2 md:gap-3 items-center justify-center px-8 md:px-10 py-4 md:py-5 border border-slate-300 dark:border-zinc-700 bg-transparent text-slate-800 dark:text-zinc-300 rounded-full font-sans font-bold uppercase tracking-[0.2em] text-xs md:text-sm hover:bg-slate-900 hover:text-white dark:hover:bg-white dark:hover:text-[#030712] transition-all duration-300 shadow-xl hover:-translate-y-1 w-full sm:w-auto text-center"
                     >
                         Investigar projeto
-                        <ExternalLink className="w-5 h-5 group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform" />
+                        <ExternalLink className="w-4 h-4 md:w-5 md:h-5 group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform" />
                     </a>
                 </motion.div>
 
@@ -61,7 +61,7 @@ export default function CaseStudy() {
                 <div className="relative w-full h-full flex justify-center items-center py-10 lg:pl-10">
 
                     {/* Efeito luminoso de fundo para o mockup */}
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] h-[90%] bg-cyan-500/10 dark:bg-cyan-500/20 rounded-full blur-[100px] pointer-events-none" />
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] h-[90%] bg-zinc-400/10 dark:bg-zinc-600/10 rounded-full blur-[100px] pointer-events-none" />
 
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95, y: 30 }}
@@ -70,7 +70,7 @@ export default function CaseStudy() {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                         className="relative z-10 w-full group"
                     >
-                        <div className="relative rounded-3xl overflow-hidden border border-slate-200/50 dark:border-zinc-800/80 shadow-[0_20px_50px_rgba(8,145,178,0.15)] dark:shadow-[0_20px_50px_rgba(8,145,178,0.2)] group-hover:shadow-[0_30px_60px_rgba(8,145,178,0.25)] dark:group-hover:border-cyan-500/30 transition-all duration-700 ease-out transform group-hover:-translate-y-2 group-hover:scale-[1.02] bg-[#f8fbfa] dark:bg-[#0a0a0a] backdrop-blur-sm aspect-[4/3] flex items-center justify-center">
+                        <div className="relative rounded-3xl overflow-hidden border border-slate-200/50 dark:border-zinc-800/80 shadow-2xl group-hover:shadow-[0_30px_60px_rgba(161,161,170,0.15)] dark:group-hover:border-zinc-500/30 transition-all duration-700 ease-out transform group-hover:-translate-y-2 group-hover:scale-[1.02] bg-white dark:bg-[#0a0a0a] backdrop-blur-sm aspect-[4/3] flex items-center justify-center">
 
                             <Swiper
                                 modules={[Autoplay, EffectFade]}
@@ -96,7 +96,7 @@ export default function CaseStudy() {
                             {/* Overlay sutil com texto explicativo na base */}
                             <div className="absolute inset-x-0 bottom-0 p-6 md:p-8 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col items-start translate-y-4 group-hover:translate-y-0 z-20 pointer-events-none">
                                 <span className="text-white font-serif text-2xl mb-2">Aura Odonto Clínicas</span>
-                                <span className="text-cyan-400 font-sans text-sm font-light">Galeria de visualização de alta resolução (8s Auto-play).</span>
+                                <span className="text-zinc-300 font-sans text-xs md:text-sm font-light">Galeria de visualização de alta resolução (8s Auto-play).</span>
                             </div>
                         </div>
                     </motion.div>

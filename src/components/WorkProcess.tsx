@@ -40,10 +40,10 @@ export default function WorkProcess() {
                     transition={{ duration: 0.8 }}
                     className="text-center mb-24"
                 >
-                    <h2 className="text-5xl md:text-7xl lg:text-[5.5rem] font-serif text-slate-900 dark:text-white mb-8 leading-[1.05] tracking-tight text-balance">
-                        Como <span className="italic text-cyan-600 dark:text-cyan-400 font-light">funciona</span>
+                    <h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-[5.5rem] font-serif text-slate-900 dark:text-white mb-6 md:mb-8 leading-[1.1] md:leading-[1.05] tracking-tight text-balance">
+                        Como <span className="italic text-slate-500 dark:text-zinc-400 font-light">funciona</span>
                     </h2>
-                    <p className="text-slate-600 dark:text-zinc-400 font-sans text-xl md:text-2xl font-light max-w-3xl mx-auto tracking-wide leading-relaxed">
+                    <p className="text-slate-600 dark:text-zinc-400 font-sans text-lg sm:text-xl md:text-2xl font-light max-w-3xl mx-auto tracking-wide leading-relaxed text-balance">
                         Um processo desenhado para minimizar o seu esforço e maximizar o resultado da sua vitrine digital.
                     </p>
                 </motion.div>
@@ -56,12 +56,12 @@ export default function WorkProcess() {
                     className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 relative"
                 >
                     {/* Linha conectora no desktop */}
-                    <div className="hidden md:block absolute top-[44px] left-[10%] right-[10%] h-[2px] bg-gradient-to-r from-transparent via-teal/20 dark:via-gold/20 to-transparent -z-10" />
+                    <div className="hidden md:block absolute top-[44px] left-[10%] right-[10%] h-[2px] bg-gradient-to-r from-transparent via-slate-300 dark:via-zinc-700 to-transparent -z-10" />
 
                     {steps.map((step, index) => (
                         <motion.div key={index} variants={stepVariants} className="flex flex-col items-center text-center group">
-                            <div className="w-24 h-24 rounded-full glass flex items-center justify-center mb-6 group-hover:-translate-y-2 transition-transform duration-300 border border-teal/10 dark:border-gold/10">
-                                <step.icon className="w-10 h-10 text-teal dark:text-gold" />
+                            <div className="w-24 h-24 rounded-full bg-slate-100 dark:bg-zinc-800/50 flex items-center justify-center mb-6 group-hover:-translate-y-2 transition-transform duration-300 border border-slate-200/50 dark:border-zinc-700/50 text-slate-900 dark:text-zinc-50 group-hover:bg-slate-200 dark:group-hover:bg-zinc-800">
+                                <step.icon className="w-10 h-10" />
                             </div>
                             <h3 className="text-xl font-sans font-semibold text-slate-900 dark:text-zinc-50 mb-4">{step.title}</h3>
                             <p className="text-slate-600 dark:text-zinc-400 font-light leading-relaxed">{step.desc}</p>
