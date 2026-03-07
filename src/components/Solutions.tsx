@@ -9,7 +9,7 @@ export default function Solutions() {
 
     const cardVariants: Variants = {
         hidden: { opacity: 0, y: 30 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+        visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" } }
     };
 
     return (
@@ -31,7 +31,7 @@ export default function Solutions() {
                     viewport={{ once: true, margin: "-100px" }}
                     variants={{
                         hidden: { opacity: 0, y: 30 },
-                        visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
+                        visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
                     }}
                     className="text-center mb-32 relative z-10"
                 >

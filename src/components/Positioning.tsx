@@ -8,7 +8,7 @@ export default function Positioning() {
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    transition={{ duration: 0.5, ease: "easeOut" }}
                 >
                     <span className="text-cyan-600 dark:text-cyan-400 font-sans font-bold tracking-[0.2em] uppercase text-xs md:text-sm mb-6 block">
                         O Nosso Foco
@@ -22,7 +22,7 @@ export default function Positioning() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
-                    transition={{ duration: 0.6, delay: 0.1 }}
+                    transition={{ duration: 0.4 }}
                     className="text-slate-600 dark:text-zinc-400 font-sans text-base md:text-lg lg:text-xl font-light leading-relaxed max-w-3xl mx-auto mb-12 md:mb-16"
                 >
                     A Wes Digital Studio ajuda empresas e clínicas a transformar sua presença digital em uma vitrine profissional que transmite confiança e gera novos clientes.

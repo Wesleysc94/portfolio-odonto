@@ -13,17 +13,15 @@ export default function Hero() {
 
     const itemVariants: Variants = {
         hidden: { opacity: 0, y: 30 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" } },
     };
 
     return (
         <section className="relative min-h-[95vh] md:min-h-[110vh] flex flex-col items-center justify-center px-6 overflow-visible pt-10 pb-20 md:-mb-32 z-20">
 
             {/* Iluminação suave em Azul/Ciano (Mantida no Hero apenas para dar boost no H1) */}
-            <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: [0.4, 0.6, 0.4], scale: [1, 1.05, 1] }}
-                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+            {/* Iluminação suave em Azul/Ciano (Animações contínuas removidas para altíssima fluidez mobile) */}
+            <div
                 className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/4 w-[80vw] h-[80vw] max-w-[800px] max-h-[800px] bg-cyan-400/20 dark:bg-cyan-500/10 rounded-full blur-[80px] md:blur-[120px] pointer-events-none z-0"
             />
 

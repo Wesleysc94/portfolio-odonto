@@ -11,7 +11,7 @@ export default function FooterCTA() {
                 initial={{ opacity: 0, scale: 0.95, y: 30 }}
                 whileInView={{ opacity: 1, scale: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
                 className="max-w-4xl mx-auto flex flex-col items-center text-center z-10 relative"
             >
                 <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-serif text-slate-800 dark:text-white mb-6 md:mb-8 leading-tight ">

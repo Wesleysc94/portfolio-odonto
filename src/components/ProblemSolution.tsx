@@ -10,7 +10,7 @@ export default function ProblemSolution() {
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    transition={{ duration: 0.5, ease: "easeOut" }}
                     className="flex flex-col items-start"
                 >
                     <h2 className="text-[2rem] sm:text-4xl md:text-5xl lg:text-6xl font-serif text-slate-900 dark:text-white mb-6 md:mb-10 leading-[1.1] md:leading-[1.05] tracking-tight">
@@ -27,7 +27,7 @@ export default function ProblemSolution() {
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
-                    transition={{ duration: 0.6, delay: 0.2 }}
+                    transition={{ duration: 0.4, delay: 0.1 }}
                     className="relative"
                 >
                     <div className="absolute -inset-4 bg-cyan-900/10 dark:bg-cyan-500/10 blur-2xl rounded-3xl -z-10" />

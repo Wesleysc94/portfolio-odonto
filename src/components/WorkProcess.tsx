@@ -9,7 +9,7 @@ export default function WorkProcess() {
 
     const stepVariants: Variants = {
         hidden: { opacity: 0, y: 30 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+        visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" } }
     };
 
     const steps = [
@@ -37,7 +37,7 @@ export default function WorkProcess() {
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
-                    transition={{ duration: 0.8 }}
+                    transition={{ duration: 0.5 }}
                     className="text-center mb-24"
                 >
                     <h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-[5.5rem] font-serif text-slate-900 dark:text-white mb-6 md:mb-8 leading-[1.1] md:leading-[1.05] tracking-tight text-balance">

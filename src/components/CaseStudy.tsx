@@ -14,7 +14,7 @@ export default function CaseStudy() {
         visible: {
             opacity: 1,
             x: 0,
-            transition: { duration: 0.8, ease: "easeOut" }
+            transition: { duration: 0.5, ease: "easeOut" }
         }
     };
 
@@ -67,7 +67,7 @@ export default function CaseStudy() {
                         initial={{ opacity: 0, scale: 0.95, y: 30 }}
                         whileInView={{ opacity: 1, scale: 1, y: 0 }}
                         viewport={{ once: true, margin: "-100px" }}
-                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        transition={{ duration: 0.5, ease: "easeOut" }}
                         className="relative z-10 w-full group flex flex-col items-center"
                     >
                         <div className="relative w-full aspect-video flex items-center justify-center">
