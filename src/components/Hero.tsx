@@ -33,11 +33,11 @@ export default function Hero({ onOpenModal }: { onOpenModal?: () => void }) {
                     {/* Coluna da Esquerda: Copywriting Hero Cinematográfico */}
                     <div className="flex flex-col items-center text-center xl:pr-10 relative z-30 w-full">
 
-                        {/* --- NOVO EMBLEMA W ANIMADO --- */}
+                        {/* --- EMBLEMA W PREMIUM (ESTÁTICO & SOFISTICADO) --- */}
                         <motion.div
                             variants={{
-                                hidden: { opacity: 0, scale: 0.9, rotate: -15 },
-                                visible: { opacity: 1, scale: 1, rotate: 0, transition: { duration: 1, ease: [0.16, 1, 0.3, 1] } }
+                                hidden: { opacity: 0 },
+                                visible: { opacity: 1, transition: { duration: 1.2, ease: "easeOut" } }
                             }}
                             className="w-36 h-36 md:w-[13.5rem] md:h-[13.5rem] mb-8 md:mb-12 flex-shrink-0 relative flex flex-col items-center justify-center mx-auto group cursor-default"
                         >
