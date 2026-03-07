@@ -50,7 +50,7 @@ export default function CaseStudy() {
                         href="https://aura-odonto-demo-site.vercel.app/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group flex gap-2 md:gap-3 items-center justify-center px-8 md:px-10 py-4 md:py-5 border border-cyan-400 dark:border-cyan-500 aura:border-amber-500 ruby:border-rose-500 text-cyan-700 dark:text-cyan-400 aura:text-amber-600 dark:aura:text-amber-400 ruby:text-rose-600 dark:ruby:text-rose-400 rounded-full font-sans font-bold uppercase tracking-[0.2em] text-xs md:text-sm hover:bg-cyan-600 aura:bg-amber-600 ruby:bg-rose-700 hover:text-white dark:hover:bg-cyan-500 dark:hover:text-[#030712] transition-all duration-300 shadow-xl hover:shadow-[0_20px_40px_-15px_rgba(8,145,178,0.4)] hover:-translate-y-1 w-full sm:w-auto text-center"
+                        className="group flex gap-2 md:gap-3 items-center justify-center px-8 md:px-10 py-4 md:py-5 border border-cyan-400 dark:border-cyan-500 aura:border-amber-500 ruby:border-rose-500 text-cyan-700 dark:text-cyan-400 aura:text-amber-600 dark:aura:text-amber-400 ruby:text-rose-600 dark:ruby:text-rose-400 rounded-full font-sans font-bold uppercase tracking-[0.2em] text-xs md:text-sm hover:bg-cyan-600 aura:hover:bg-amber-600 ruby:hover:bg-rose-700 hover:text-white aura:hover:text-white ruby:hover:text-white dark:hover:bg-cyan-500 dark:hover:text-[#030712] dark:aura:hover:bg-amber-500 dark:aura:hover:text-[#09090B] dark:ruby:hover:bg-rose-600 dark:ruby:hover:text-white transition-all duration-300 shadow-xl hover:shadow-[0_20px_40px_-15px_rgba(8,145,178,0.4)] hover:-translate-y-1 w-full sm:w-auto text-center"
                     >
                         Investigar projeto
                         <ExternalLink className="w-4 h-4 md:w-5 md:h-5 group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform" />
@@ -60,8 +60,8 @@ export default function CaseStudy() {
                 {/* Coluna Direita: Imagens/Mockups */}
                 <div className="relative w-full h-full flex justify-center items-center py-10 lg:pl-10 !overflow-visible">
 
-                    {/* Efeito luminoso de fundo para a Imagem Direta - Ajustado para ser circular */}
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[600px] md:h-[600px] bg-cyan-400/10 dark:bg-cyan-500 aura:bg-amber-500 ruby:bg-rose-600 rounded-full blur-[60px] md:blur-[140px] opacity-15 md:opacity-50 pointer-events-none z-0" />
+                    {/* Fundo elegante e difuso, sem bolas sólidas, usando radial-gradient seguro e escalável */}
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,theme(colors.cyan.400/0.08)_0%,transparent_60%)] dark:bg-[radial-gradient(circle_at_center,theme(colors.cyan.500/0.15)_0%,transparent_60%)] aura:bg-[radial-gradient(circle_at_center,theme(colors.amber.500/0.15)_0%,transparent_60%)] ruby:bg-[radial-gradient(circle_at_center,theme(colors.rose.600/0.15)_0%,transparent_60%)] pointer-events-none z-0" />
 
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95, y: 20 }}

@@ -39,11 +39,9 @@ export default function Hero({ onOpenModal }: { onOpenModal?: () => void }) {
                                 hidden: { opacity: 0, scale: 0.8 },
                                 visible: { opacity: 1, scale: 1, transition: { duration: 0.8, ease: "easeOut" } }
                             }}
-                            className="w-20 h-20 md:w-28 md:h-28 mb-12 md:mb-16 flex-shrink-0 rounded-full border border-cyan-200/50 dark:border-cyan-800/40 aura:border-amber-500/30 ruby:border-rose-500/30 bg-white/80 dark:bg-[#0a0a0a]/80 aura:bg-[#09090B]/80 ruby:bg-[#050505]/80 backdrop-blur-md flex flex-col items-center justify-center relative shadow-[0_4px_30px_-5px_rgba(8,145,178,0.15)] dark:shadow-[0_4px_30px_-5px_rgba(8,145,178,0.2)] aura:shadow-[0_4px_30px_-5px_rgba(245,158,11,0.15)] ruby:shadow-[0_4px_30px_-5px_rgba(225,29,72,0.15)] mx-auto md:mx-0 animate-pulseGlow"
+                            className="w-28 h-28 md:w-36 md:h-36 mb-12 md:mb-16 flex-shrink-0 rounded-full border border-cyan-200/50 dark:border-white/10 aura:border-white/10 ruby:border-white/10 bg-white/50 dark:bg-[#0a0a0a]/50 aura:bg-[#09090B]/50 ruby:bg-[#050505]/50 backdrop-blur-xl flex flex-col items-center justify-center relative shadow-sm mx-auto md:mx-0 group cursor-default"
                         >
-                            <div className="absolute inset-0 bg-white/20 dark:bg-white/5 blur-xl rounded-full z-0" />
-                            <div className="absolute -inset-2 border border-cyan-400/20 dark:border-cyan-500/20 aura:border-amber-500/20 ruby:border-rose-500/20 rounded-full opacity-50 z-0" />
-                            <span className="font-serif text-3xl md:text-5xl text-slate-900 dark:text-white aura:text-white ruby:text-white italic relative z-10 opacity-90 drop-shadow-md">
+                            <span className="font-serif text-5xl md:text-7xl text-slate-900 dark:text-white aura:text-white ruby:text-white italic relative z-10 transition-transform duration-500 group-hover:scale-110">
                                 W
                             </span>
                         </motion.div>

@@ -23,9 +23,9 @@ function App() {
     return (
         <div className="relative w-full min-h-screen bg-slate-50 dark:bg-[#0a0a0a] aura:bg-[#09090B] ruby:bg-[#050505] transition-colors duration-500 text-slate-900 dark:text-zinc-50 aura:text-slate-50 ruby:text-slate-50 overflow-x-hidden">
 
-            <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
-                <div className="absolute top-[20%] right-[-10%] w-[50vw] h-[50vw] max-w-[800px] max-h-[800px] bg-cyan-900/5 dark:bg-white/5 blur-[30px] md:blur-[120px] opacity-50 md:opacity-100 rounded-full mix-blend-screen" />
-                <div className="absolute bottom-[10%] left-[-10%] w-[50vw] h-[50vw] max-w-[800px] max-h-[800px] bg-indigo-900/5 dark:bg-white/5 blur-[30px] md:blur-[120px] opacity-50 md:opacity-100 rounded-full mix-blend-screen" />
+            <div className="fixed inset-0 pointer-events-none overflow-hidden z-0 hidden md:block">
+                <div className="absolute top-[20%] right-[-10%] w-[50vw] h-[50vw] max-w-[800px] max-h-[800px] bg-cyan-900/5 dark:bg-cyan-500/5 aura:bg-amber-500/5 ruby:bg-rose-500/5 blur-[120px] opacity-100 rounded-full mix-blend-screen" />
+                <div className="absolute bottom-[10%] left-[-10%] w-[50vw] h-[50vw] max-w-[800px] max-h-[800px] bg-indigo-900/5 dark:bg-indigo-500/5 aura:bg-amber-600/5 ruby:bg-rose-600/5 blur-[120px] opacity-100 rounded-full mix-blend-screen" />
             </div>
 
             <div className="fixed bottom-6 left-0 w-full px-6 z-50 flex justify-between items-end pointer-events-none">
