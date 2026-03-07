@@ -46,6 +46,15 @@ export default function Hero({ onOpenModal }: { onOpenModal?: () => void }) {
                             {/* Anel Externo Refinado (Profundidade sutil) */}
                             <div className="absolute inset-[2px] md:inset-[3px] rounded-full border border-cyan-700/40 dark:border-cyan-400/40 aura:border-amber-500/20 ruby:border-rose-500/20 z-10 pointer-events-none" />
 
+                            {/* Órbita de Partículas Estelares (Satélites de Alta Precisão) */}
+                            <div className="absolute inset-[2px] md:inset-[3px] rounded-full animate-[spin_40s_linear_infinite_reverse] z-30 pointer-events-none">
+                                {/* Partícula Principal (Topo) */}
+                                <div className="absolute -top-[3px] left-1/2 -translate-x-1/2 w-1.5 h-1.5 md:w-2 md:h-2 bg-cyan-400 dark:bg-cyan-300 aura:bg-amber-400 ruby:bg-rose-400 rounded-full shadow-[0_0_10px_2px_rgba(34,211,238,0.8)] dark:shadow-[0_0_10px_2px_rgba(103,232,249,0.8)] aura:shadow-[0_0_10px_2px_rgba(251,191,36,0.8)] ruby:shadow-[0_0_10px_2px_rgba(251,113,133,0.8)]" />
+
+                                {/* Partícula Secundária (Fundo Direito) */}
+                                <div className="absolute bottom-[14%] right-[14%] translate-x-1/2 translate-y-1/2 w-1 h-1 md:w-1.5 md:h-1.5 bg-cyan-300 dark:bg-cyan-200 aura:bg-amber-300 ruby:bg-rose-300 rounded-full shadow-[0_0_8px_1px_rgba(34,211,238,0.6)] dark:shadow-[0_0_8px_1px_rgba(103,232,249,0.6)] aura:shadow-[0_0_8px_1px_rgba(251,191,36,0.6)] ruby:shadow-[0_0_8px_1px_rgba(251,113,133,0.6)] opacity-70" />
+                            </div>
+
                             {/* Anel Interno Tracejado Suave (Animação Loop Contínua) */}
                             <div className="absolute inset-3 md:inset-4 rounded-full border border-cyan-700/40 dark:border-cyan-400/40 aura:border-amber-500/40 ruby:border-rose-500/40 border-dashed z-20 pointer-events-none animate-[spin_30s_linear_infinite]" />
 
