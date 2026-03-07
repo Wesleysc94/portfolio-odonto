@@ -16,8 +16,8 @@ export default function Button({ children, variant = 'primary', href, className 
     // - Ruby: bg-rose-600 text-white font-medium tracking-wide
     const primaryStyles = "bg-zinc-900 text-white font-bold tracking-[0.2em] uppercase text-xs md:text-sm shadow-[0_4px_20px_-5px_rgba(0,0,0,0.5)] border border-white/5 " +
         "hover:shadow-[0_10px_40px_-10px_rgba(8,145,178,0.4)] hover:border-cyan-500/50 hover:bg-zinc-800 " +
-        "aura:bg-amber-500 aura:text-zinc-950 aura:font-semibold aura:tracking-wide aura:normal-case aura:text-sm md:aura:text-base aura:hover:shadow-[0_10px_40px_-10px_rgba(245,158,11,0.5)] aura:hover:bg-amber-400 aura:border-transparent " +
-        "ruby:bg-rose-600 ruby:text-white ruby:font-medium ruby:tracking-wide ruby:normal-case ruby:text-sm md:ruby:text-base ruby:hover:shadow-[0_10px_40px_-10px_rgba(225,29,72,0.5)] ruby:hover:bg-rose-500 ruby:border-transparent";
+        "aura:bg-amber-500 aura:text-zinc-950 aura:font-semibold aura:tracking-wide aura:text-sm md:aura:text-base aura:hover:shadow-[0_10px_40px_-10px_rgba(245,158,11,0.5)] aura:hover:bg-amber-400 aura:border-transparent " +
+        "ruby:bg-rose-600 ruby:text-white ruby:font-medium ruby:tracking-wide ruby:text-sm md:ruby:text-base ruby:hover:shadow-[0_10px_40px_-10px_rgba(225,29,72,0.5)] ruby:hover:bg-rose-500 ruby:border-transparent";
 
     // Outline: Minimal border
     const outlineStyles = "bg-transparent border border-slate-300 dark:border-zinc-800 text-slate-700 dark:text-zinc-200 font-bold tracking-[0.2em] uppercase text-xs md:text-sm " +

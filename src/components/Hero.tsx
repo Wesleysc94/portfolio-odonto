@@ -31,7 +31,7 @@ export default function Hero({ onOpenModal }: { onOpenModal?: () => void }) {
                     animate="visible"
                 >
                     {/* Coluna da Esquerda: Copywriting Hero Cinematográfico */}
-                    <div className="flex flex-col items-center md:items-start text-center md:text-left xl:pr-10 relative z-30 w-full">
+                    <div className="flex flex-col items-center text-center xl:pr-10 relative z-30 w-full">
 
                         {/* --- NOVO EMBLEMA W ANIMADO --- */}
                         <motion.div
@@ -39,9 +39,10 @@ export default function Hero({ onOpenModal }: { onOpenModal?: () => void }) {
                                 hidden: { opacity: 0, scale: 0.8 },
                                 visible: { opacity: 1, scale: 1, transition: { duration: 0.8, ease: "easeOut" } }
                             }}
-                            className="w-28 h-28 md:w-36 md:h-36 mb-12 md:mb-16 flex-shrink-0 rounded-full border border-cyan-200/50 dark:border-white/10 aura:border-white/10 ruby:border-white/10 bg-white/50 dark:bg-[#0a0a0a]/50 aura:bg-[#09090B]/50 ruby:bg-[#050505]/50 backdrop-blur-xl flex flex-col items-center justify-center relative shadow-sm mx-auto md:mx-0 group cursor-default"
+                            className="w-32 h-32 md:w-48 md:h-48 mb-8 md:mb-12 flex-shrink-0 rounded-full border border-cyan-400/30 dark:border-white/20 aura:border-white/20 ruby:border-white/20 bg-gradient-to-br from-white/90 to-white/30 dark:from-white/10 dark:to-transparent aura:from-white/10 ruby:from-white/10 backdrop-blur-3xl flex flex-col items-center justify-center relative shadow-2xl mx-auto group cursor-default"
                         >
-                            <span className="font-serif text-5xl md:text-7xl text-slate-900 dark:text-white aura:text-white ruby:text-white italic relative z-10 transition-transform duration-500 group-hover:scale-110">
+                            <div className="absolute inset-2 md:inset-3 rounded-full border border-cyan-300/30 dark:border-white/10 aura:border-white/10 ruby:border-white/10 border-dashed animate-[spin_30s_linear_infinite]" />
+                            <span className="font-serif text-6xl md:text-8xl text-slate-900 dark:text-white aura:text-white ruby:text-white italic relative z-10 transition-transform duration-500 group-hover:scale-110 drop-shadow-md">
                                 W
                             </span>
                         </motion.div>
@@ -55,13 +56,13 @@ export default function Hero({ onOpenModal }: { onOpenModal?: () => void }) {
 
                         <motion.p
                             variants={itemVariants}
-                            className="text-base sm:text-lg md:text-xl xl:text-2xl text-slate-600 dark:text-zinc-400 aura:text-zinc-400 ruby:text-zinc-400 font-sans max-w-xl mb-12 md:mb-16 font-light leading-relaxed tracking-wide mx-auto md:mx-0"
+                            className="text-base sm:text-lg md:text-xl xl:text-2xl text-slate-600 dark:text-zinc-400 aura:text-zinc-400 ruby:text-zinc-400 font-sans max-w-xl mb-12 md:mb-16 font-light leading-relaxed tracking-wide mx-auto"
                         >
                             O padrão ouro do web design para empresas premium. Projetos desenhados para alta conversão através de gatilhos visuais e engenharia de ponta.
                         </motion.p>
 
                         {/* Container de Botões (Premium Cyan) */}
-                        <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center gap-4 mb-8 md:mb-16 w-full sm:w-auto">
+                        <motion.div variants={itemVariants} className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-8 md:mb-16 w-full sm:w-auto">
                             <Button href="https://aura-odonto-demo-site.vercel.app/" target="_blank" rel="noopener noreferrer" variant="primary" className="w-full sm:w-[280px]">
                                 Ver demonstração
                                 <ArrowRight className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform duration-300" />
