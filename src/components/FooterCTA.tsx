@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export default function FooterCTA({ onOpenModal }: { onOpenModal?: () => void }) {
     return (
-        <footer className="relative mt-10 py-20 px-6 overflow-hidden">
+        <footer id="footer-cta" className="relative mt-10 py-20 px-6 overflow-hidden">
             {/* Background Section-Specific */}
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-[80vw] h-[80vw] max-w-[600px] max-h-[600px] bg-cyan-600/5 dark:bg-cyan-500/10 rounded-full blur-[100px] pointer-events-none" />
 

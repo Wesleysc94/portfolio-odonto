@@ -19,14 +19,8 @@ export default function Hero({ onOpenModal }: { onOpenModal?: () => void }) {
     return (
         <section className="relative min-h-[95vh] md:min-h-[110vh] flex flex-col items-center justify-center px-6 overflow-visible pt-10 pb-20 md:-mb-32 z-20">
 
-            {/* Iluminação suave em Azul/Ciano (Mantida no Hero apenas para dar boost no H1) */}
-            {/* Iluminação suave em Azul/Ciano (Animações contínuas removidas para altíssima fluidez mobile) */}
-            <div
-                className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/4 w-[80vw] h-[80vw] max-w-[800px] max-h-[800px] bg-cyan-400/20 dark:bg-cyan-500/10 rounded-full blur-[80px] md:blur-[120px] pointer-events-none z-0"
-            />
-
-            {/* Grid Background */}
-            <div className="absolute inset-0 w-full h-full bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:linear-gradient(to_bottom,black_0%,black_80%,transparent_100%)] pointer-events-none z-0" />
+            {/* Grade extremamente sutil (removido no modo dark para o aspecto black total Aura) */}
+            <div className="absolute inset-0 w-full h-full bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] dark:bg-transparent bg-[size:24px_24px] pointer-events-none z-0" />
 
             <div className="z-10 relative max-w-7xl mx-auto mt-20 md:mt-0 w-full">
                 <motion.div
