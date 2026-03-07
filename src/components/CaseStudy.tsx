@@ -60,8 +60,8 @@ export default function CaseStudy() {
                 {/* Coluna Direita: Imagens/Mockups */}
                 <div className="relative w-full h-full flex justify-center items-center py-10 lg:pl-10 !overflow-visible">
 
-                    {/* Efeito luminoso de fundo para a Imagem Direta */}
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100%] h-[100%] bg-cyan-400/10 dark:bg-cyan-500 aura:bg-amber-500 ruby:bg-rose-600 rounded-full blur-[60px] md:blur-[140px] opacity-15 md:opacity-50 pointer-events-none" />
+                    {/* Efeito luminoso de fundo para a Imagem Direta - Ajustado para ser circular */}
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[600px] md:h-[600px] bg-cyan-400/10 dark:bg-cyan-500 aura:bg-amber-500 ruby:bg-rose-600 rounded-full blur-[60px] md:blur-[140px] opacity-15 md:opacity-50 pointer-events-none z-0" />
 
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95, y: 20 }}
