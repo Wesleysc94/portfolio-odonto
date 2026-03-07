@@ -1,7 +1,7 @@
 import { MessageCircle, FileText } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-export default function FooterCTA() {
+export default function FooterCTA({ onOpenModal }: { onOpenModal?: () => void }) {
     return (
         <footer className="relative mt-10 py-20 px-6 overflow-hidden">
             {/* Background Section-Specific */}
@@ -10,7 +10,7 @@ export default function FooterCTA() {
             <motion.div
                 initial={{ opacity: 0, scale: 0.95, y: 30 }}
                 whileInView={{ opacity: 1, scale: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
+                viewport={{ once: true, margin: "0px" }}
                 transition={{ duration: 0.5, ease: "easeOut" }}
                 className="max-w-4xl mx-auto flex flex-col items-center text-center z-10 relative"
             >
@@ -31,13 +31,13 @@ export default function FooterCTA() {
                         Falar no WhatsApp
                     </a>
 
-                    <a
-                        href="https://wa.me/5511930863826" target="_blank" rel="noreferrer"
+                    <button
+                        onClick={onOpenModal}
                         className="group flex gap-2 sm:gap-3 items-center justify-center px-6 sm:px-8 py-4 border border-slate-300 dark:border-zinc-800 bg-transparent text-slate-700 dark:text-zinc-200 font-sans font-bold text-xs sm:text-sm tracking-widest uppercase rounded-full hover:bg-slate-100 dark:hover:bg-zinc-800 hover:border-cyan-500/30 hover:-translate-y-1 transition-all duration-300 w-full sm:w-auto whitespace-nowrap"
                     >
                         <FileText className="w-4 sm:w-5 h-4 sm:h-5 text-cyan-600 dark:text-cyan-400" />
                         Solicitar Proposta
-                    </a>
+                    </button>
                 </div>
 
                 <div className="mt-24 text-slate-500 dark:text-zinc-600 font-sans text-sm">

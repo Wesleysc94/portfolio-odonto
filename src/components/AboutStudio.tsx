@@ -12,7 +12,7 @@ export default function AboutStudio() {
                 <motion.div
                     initial={{ opacity: 0, scale: 0.8 }}
                     whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true, margin: "-100px" }}
+                    viewport={{ once: true, margin: "0px" }}
                     transition={{ duration: 0.5, ease: "easeOut", type: "spring", stiffness: 50 }}
                     whileHover={{ scale: 1.05 }}
                     className="w-48 h-48 md:w-72 md:h-72 flex-shrink-0 rounded-full border border-cyan-200 dark:border-cyan-800/60 bg-white dark:bg-[#0a0a0a] flex flex-col items-center justify-center relative group cursor-default shadow-xl hover:shadow-[0_0_40px_rgba(8,145,178,0.2)] transition-shadow duration-500"
@@ -34,7 +34,7 @@ export default function AboutStudio() {
                 <motion.div
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true, margin: "-100px" }}
+                    viewport={{ once: true, margin: "0px" }}
                     transition={{ duration: 0.5, delay: 0.1 }}
                     className="flex flex-col text-center md:text-left"
                 >

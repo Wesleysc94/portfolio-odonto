@@ -7,7 +7,7 @@ export default function NicheExpansion() {
                 <motion.h2
                     initial={{ opacity: 0, scale: 0.95 }}
                     whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true, margin: "-100px" }}
+                    viewport={{ once: true, margin: "0px" }}
                     transition={{ duration: 0.6 }}
                     className="text-3xl md:text-5xl font-serif text-slate-800 dark:text-white mb-6 leading-tight"
                 >
@@ -17,7 +17,7 @@ export default function NicheExpansion() {
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-100px" }}
+                    viewport={{ once: true, margin: "0px" }}
                     transition={{ duration: 0.6, delay: 0.1 }}
                     className="text-slate-600 dark:text-zinc-400 font-sans text-lg md:text-xl font-light leading-relaxed max-w-3xl mx-auto"
                 >

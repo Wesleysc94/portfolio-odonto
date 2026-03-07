@@ -9,7 +9,7 @@ export default function ProblemSolution() {
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true, margin: "-100px" }}
+                    viewport={{ once: true, margin: "0px" }}
                     transition={{ duration: 0.5, ease: "easeOut" }}
                     className="flex flex-col items-start"
                 >
@@ -26,7 +26,7 @@ export default function ProblemSolution() {
                 <motion.div
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true, margin: "-100px" }}
+                    viewport={{ once: true, margin: "0px" }}
                     transition={{ duration: 0.4, delay: 0.1 }}
                     className="relative"
                 >

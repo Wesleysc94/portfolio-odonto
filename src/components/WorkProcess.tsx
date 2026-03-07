@@ -36,7 +36,7 @@ export default function WorkProcess() {
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-100px" }}
+                    viewport={{ once: true, margin: "0px" }}
                     transition={{ duration: 0.5 }}
                     className="text-center mb-24"
                 >
@@ -51,7 +51,7 @@ export default function WorkProcess() {
                 <motion.div
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: true, margin: "-100px" }}
+                    viewport={{ once: true, margin: "0px" }}
                     variants={containerVariants}
                     className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 relative"
                 >

@@ -33,7 +33,7 @@ export default function CaseStudy() {
                 <motion.div
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: true, margin: "-100px" }}
+                    viewport={{ once: true, margin: "0px" }}
                     variants={textVariants}
                     className="flex flex-col items-start z-10 w-full"
                 >
@@ -66,7 +66,7 @@ export default function CaseStudy() {
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95, y: 30 }}
                         whileInView={{ opacity: 1, scale: 1, y: 0 }}
-                        viewport={{ once: true, margin: "-100px" }}
+                        viewport={{ once: true, margin: "0px" }}
                         transition={{ duration: 0.5, ease: "easeOut" }}
                         className="relative z-10 w-full group flex flex-col items-center"
                     >

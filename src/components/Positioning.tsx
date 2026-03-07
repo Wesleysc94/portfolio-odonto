@@ -7,7 +7,7 @@ export default function Positioning() {
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-100px" }}
+                    viewport={{ once: true, margin: "0px" }}
                     transition={{ duration: 0.5, ease: "easeOut" }}
                 >
                     <span className="text-cyan-600 dark:text-cyan-400 font-sans font-bold tracking-[0.2em] uppercase text-xs md:text-sm mb-6 block">
@@ -21,7 +21,7 @@ export default function Positioning() {
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-100px" }}
+                    viewport={{ once: true, margin: "0px" }}
                     transition={{ duration: 0.4 }}
                     className="text-slate-600 dark:text-zinc-400 font-sans text-base md:text-lg lg:text-xl font-light leading-relaxed max-w-3xl mx-auto mb-12 md:mb-16"
                 >
@@ -31,7 +31,7 @@ export default function Positioning() {
                 <motion.div
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: true, margin: "-100px" }}
+                    viewport={{ once: true, margin: "0px" }}
                     variants={{
                         hidden: { opacity: 0 },
                         visible: { opacity: 1, transition: { staggerChildren: 0.2 } }

@@ -17,7 +17,7 @@ export default function Services() {
             <motion.div
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, margin: "-100px" }}
+                viewport={{ once: true, margin: "0px" }}
                 variants={{
                     hidden: { opacity: 0, y: 20 },
                     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
@@ -33,7 +33,7 @@ export default function Services() {
             <motion.div
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, margin: "-100px" }}
+                viewport={{ once: true, margin: "0px" }}
                 variants={containerVariants}
                 className="grid grid-cols-1 md:grid-cols-3 gap-8"
             >

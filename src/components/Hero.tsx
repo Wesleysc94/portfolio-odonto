@@ -1,7 +1,7 @@
 import { MessageCircle, ArrowRight } from 'lucide-react';
 import { motion, type Variants } from 'framer-motion';
 
-export default function Hero() {
+export default function Hero({ onOpenModal }: { onOpenModal?: () => void }) {
     // Variantes para animação em cascata (stagger)
     const containerVariants: Variants = {
         hidden: { opacity: 0 },
@@ -70,13 +70,13 @@ export default function Hero() {
                                 <div className="absolute inset-0 bg-cyan-700 dark:bg-cyan-600 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 z-0" />
                             </a>
 
-                            <a
-                                href="https://wa.me/5511930863826" target="_blank" rel="noreferrer"
+                            <button
+                                onClick={onOpenModal}
                                 className="group flex gap-2 md:gap-3 items-center justify-center px-8 md:px-10 py-4 md:py-5 border border-slate-300 dark:border-zinc-800 bg-transparent text-slate-700 dark:text-zinc-200 font-sans font-bold text-xs md:text-sm tracking-[0.2em] uppercase rounded-full hover:bg-slate-100 dark:hover:bg-zinc-800 hover:border-cyan-500/30 hover:-translate-y-1 transition-all duration-500 w-full sm:w-auto whitespace-nowrap"
                             >
                                 Solicitar proposta
                                 <MessageCircle className="w-4 h-4 md:w-5 md:h-5 text-cyan-600 dark:text-cyan-400" />
-                            </a>
+                            </button>
                         </motion.div>
                     </div>
 

@@ -28,7 +28,7 @@ export default function Solutions() {
                 <motion.div
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: true, margin: "-100px" }}
+                    viewport={{ once: true, margin: "0px" }}
                     variants={{
                         hidden: { opacity: 0, y: 30 },
                         visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
@@ -46,7 +46,7 @@ export default function Solutions() {
                 <motion.div
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: true, margin: "-100px" }}
+                    viewport={{ once: true, margin: "0px" }}
                     variants={containerVariants}
                     className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 relative z-10"
                 >
