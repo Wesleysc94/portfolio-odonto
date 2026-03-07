@@ -39,10 +39,11 @@ export default function Hero({ onOpenModal }: { onOpenModal?: () => void }) {
                                 hidden: { opacity: 0, scale: 0.8 },
                                 visible: { opacity: 1, scale: 1, transition: { duration: 0.8, ease: "easeOut" } }
                             }}
-                            className="w-20 h-20 md:w-24 md:h-24 mb-10 md:mb-12 flex-shrink-0 rounded-full border border-cyan-200/50 dark:border-cyan-800/40 aura:border-amber-500/30 ruby:border-rose-500/30 bg-white/80 dark:bg-[#0a0a0a]/80 aura:bg-[#09090B]/80 ruby:bg-[#050505]/80 backdrop-blur-md flex flex-col items-center justify-center relative shadow-[0_4px_30px_-5px_rgba(8,145,178,0.15)] dark:shadow-[0_4px_30px_-5px_rgba(8,145,178,0.2)] aura:shadow-[0_4px_30px_-5px_rgba(245,158,11,0.15)] ruby:shadow-[0_4px_30px_-5px_rgba(225,29,72,0.15)] mx-auto md:mx-0 animate-pulseGlow"
+                            className="w-20 h-20 md:w-28 md:h-28 mb-12 md:mb-16 flex-shrink-0 rounded-full border border-cyan-200/50 dark:border-cyan-800/40 aura:border-amber-500/30 ruby:border-rose-500/30 bg-white/80 dark:bg-[#0a0a0a]/80 aura:bg-[#09090B]/80 ruby:bg-[#050505]/80 backdrop-blur-md flex flex-col items-center justify-center relative shadow-[0_4px_30px_-5px_rgba(8,145,178,0.15)] dark:shadow-[0_4px_30px_-5px_rgba(8,145,178,0.2)] aura:shadow-[0_4px_30px_-5px_rgba(245,158,11,0.15)] ruby:shadow-[0_4px_30px_-5px_rgba(225,29,72,0.15)] mx-auto md:mx-0 animate-pulseGlow"
                         >
-                            <div className="absolute -inset-2 border border-cyan-400/20 dark:border-cyan-500/20 aura:border-amber-500/20 ruby:border-rose-500/20 rounded-full opacity-50" />
-                            <span className="font-serif text-3xl md:text-4xl text-slate-900 dark:text-white aura:text-white ruby:text-white italic relative z-10 opacity-90 drop-shadow-md">
+                            <div className="absolute inset-0 bg-white/20 dark:bg-white/5 blur-xl rounded-full z-0" />
+                            <div className="absolute -inset-2 border border-cyan-400/20 dark:border-cyan-500/20 aura:border-amber-500/20 ruby:border-rose-500/20 rounded-full opacity-50 z-0" />
+                            <span className="font-serif text-3xl md:text-5xl text-slate-900 dark:text-white aura:text-white ruby:text-white italic relative z-10 opacity-90 drop-shadow-md">
                                 W
                             </span>
                         </motion.div>
@@ -63,7 +64,7 @@ export default function Hero({ onOpenModal }: { onOpenModal?: () => void }) {
 
                         {/* Container de Botões (Premium Cyan) */}
                         <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center gap-4 mb-8 md:mb-16 w-full sm:w-auto">
-                            <Button href="#case-study" variant="primary" className="w-full sm:w-[280px]">
+                            <Button href="https://aura-odonto-demo-site.vercel.app/" target="_blank" rel="noopener noreferrer" variant="primary" className="w-full sm:w-[280px]">
                                 Ver demonstração
                                 <ArrowRight className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform duration-300" />
                             </Button>
@@ -76,7 +77,7 @@ export default function Hero({ onOpenModal }: { onOpenModal?: () => void }) {
 
                         {/* Imagem APENAS no Mobile, inserida após botões */}
                         <motion.div variants={itemVariants} className="flex lg:hidden relative w-full justify-center items-center pointer-events-none mt-8">
-                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-cyan-400/5 dark:bg-cyan-500/5 aura:bg-amber-500/5 ruby:bg-rose-600/5 rounded-full blur-[40px] z-0" />
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-cyan-400/5 dark:bg-cyan-500/5 aura:bg-amber-500/5 ruby:bg-rose-600/5 rounded-full blur-[60px] opacity-30 z-0" />
                             <img src="/mockups/dupla versao mobile.PNG" alt="Mobile UI Desktop" loading="lazy" className="relative z-30 w-full max-w-[340px] rounded-[2rem] shadow-xl border-[3px] border-white/30 dark:border-white/10 aura:border-white/10 ruby:border-white/10 opacity-90" />
                         </motion.div>
                     </div>
@@ -89,7 +90,7 @@ export default function Hero({ onOpenModal }: { onOpenModal?: () => void }) {
                         <div className="relative w-full max-w-[500px] h-full min-h-[500px] lg:scale-125 xl:scale-[1.35] xl:translate-x-10 lg:-translate-y-8 xl:-translate-y-12 z-20 flex justify-center items-center">
 
                             {/* Efeito Deep Glow Radial atrás do Mockup */}
-                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] bg-cyan-400/5 dark:bg-cyan-500/10 aura:bg-amber-500/10 ruby:bg-rose-600/10 rounded-full blur-[80px] pointer-events-none" />
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] bg-cyan-400/5 dark:bg-cyan-500/5 aura:bg-amber-500/5 ruby:bg-rose-600/5 rounded-full blur-[120px] pointer-events-none" />
 
                             {/* Main Screen: Single Imagem Original (Conforme pedido) */}
                             <motion.img

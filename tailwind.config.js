@@ -27,7 +27,7 @@ export default {
             },
             keyframes: {
                 shine: {
-                    '100%': { transform: 'translateX(200%) skewX(-12deg)' }
+                    '100%': { transform: 'translateX(400%) skewX(-12deg)' }
                 },
                 pulseGlow: {
                     '0%, 100%': { transform: 'scale(1)', opacity: '0.8' },
