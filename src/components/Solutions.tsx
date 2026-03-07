@@ -53,7 +53,7 @@ export default function Solutions() {
                     {/* Card 1: Website Institucional */}
                     <motion.div
                         variants={cardVariants}
-                        className="glass border border-slate-200/50 dark:border-zinc-800/80 p-10 md:p-14 rounded-[2.5rem] flex flex-col items-start gap-8 hover:-translate-y-4 hover:shadow-[0_0_40px_rgba(8,145,178,0.15)] dark:hover:shadow-[0_0_40px_rgba(8,145,178,0.2)] dark:hover:border-cyan-500 aura:hover:border-amber-500 ruby:hover:border-rose-500 aura:border-amber-500 ruby:border-rose-500 transition-all duration-700 ease-out group bg-white/50 dark:bg-black/40 backdrop-blur-md"
+                        className="glass border border-slate-200/50 dark:border-zinc-800 aura:border-zinc-800 ruby:border-zinc-800/80 aura:border-zinc-800/80 ruby:border-zinc-800/80 p-10 md:p-14 rounded-[2.5rem] flex flex-col items-start gap-8 hover:-translate-y-4 hover:shadow-[0_0_40px_rgba(8,145,178,0.15)] dark:hover:shadow-[0_0_40px_rgba(8,145,178,0.2)] dark:hover:border-cyan-500 aura:hover:border-amber-500 ruby:hover:border-rose-500 aura:border-amber-500 ruby:border-rose-500 transition-all duration-700 ease-out group bg-white/50 dark:bg-black/40 aura:bg-black/40 ruby:bg-black/40 backdrop-blur-md"
                     >
                         <div className="w-20 h-20 rounded-3xl bg-cyan-50 dark:bg-cyan-900/20 text-cyan-600 aura:text-amber-500 ruby:text-rose-600 dark:text-cyan-400 aura:text-amber-400 ruby:text-rose-400 flex items-center justify-center group-hover:scale-110 group-hover:bg-cyan-100 dark:group-hover:bg-cyan-900/40 transition-all duration-500 ease-out shadow-sm dark:shadow-none">
                             <LayoutDashboard className="w-10 h-10 stroke-[1.5]" />
@@ -70,7 +70,7 @@ export default function Solutions() {
                     {/* Card 2: Landing Page Estratégica */}
                     <motion.div
                         variants={cardVariants}
-                        className="glass border border-slate-200/50 dark:border-zinc-800/80 p-10 md:p-14 rounded-[2.5rem] flex flex-col items-start gap-8 hover:-translate-y-4 hover:shadow-[0_0_40px_rgba(8,145,178,0.15)] dark:hover:shadow-[0_0_40px_rgba(8,145,178,0.2)] dark:hover:border-cyan-500 aura:hover:border-amber-500 ruby:hover:border-rose-500 aura:border-amber-500 ruby:border-rose-500 transition-all duration-700 ease-out group bg-white/50 dark:bg-black/40 backdrop-blur-md"
+                        className="glass border border-slate-200/50 dark:border-zinc-800 aura:border-zinc-800 ruby:border-zinc-800/80 aura:border-zinc-800/80 ruby:border-zinc-800/80 p-10 md:p-14 rounded-[2.5rem] flex flex-col items-start gap-8 hover:-translate-y-4 hover:shadow-[0_0_40px_rgba(8,145,178,0.15)] dark:hover:shadow-[0_0_40px_rgba(8,145,178,0.2)] dark:hover:border-cyan-500 aura:hover:border-amber-500 ruby:hover:border-rose-500 aura:border-amber-500 ruby:border-rose-500 transition-all duration-700 ease-out group bg-white/50 dark:bg-black/40 aura:bg-black/40 ruby:bg-black/40 backdrop-blur-md"
                     >
                         <div className="w-20 h-20 rounded-3xl bg-cyan-50 dark:bg-cyan-900/20 text-cyan-600 aura:text-amber-500 ruby:text-rose-600 dark:text-cyan-400 aura:text-amber-400 ruby:text-rose-400 flex items-center justify-center group-hover:scale-110 group-hover:bg-cyan-100 dark:group-hover:bg-cyan-900/40 transition-all duration-500 ease-out shadow-sm dark:shadow-none">
                             <Target className="w-10 h-10 stroke-[1.5]" />

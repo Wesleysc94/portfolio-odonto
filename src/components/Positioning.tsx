@@ -40,21 +40,21 @@ export default function Positioning() {
  >
  {/* Pilares do Projeto */}
  <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="flex flex-col items-center gap-2">
- <div className="w-12 h-12 rounded-full bg-slate-100 aura:bg-zinc-800/50 ruby:bg-zinc-900/80 dark:bg-zinc-800/50 aura:bg-zinc-800/50 ruby:bg-zinc-800/50 flex items-center justify-center text-xl">✨</div>
+ <div className="w-12 h-12 rounded-full bg-slate-100 aura:bg-zinc-800/50 ruby:bg-zinc-900/80 dark:bg-zinc-800/50 aura:bg-zinc-800/50 ruby:bg-zinc-800/50 aura:bg-zinc-800/50 ruby:bg-zinc-800/50 flex items-center justify-center text-xl">✨</div>
  <span className="font-medium text-lg">Design Moderno</span>
  </motion.div>
 
  <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="hidden md:block w-px h-12 bg-slate-200 dark:bg-zinc-800" />
 
  <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="flex flex-col items-center gap-2">
- <div className="w-12 h-12 rounded-full bg-slate-100 aura:bg-zinc-800/50 ruby:bg-zinc-900/80 dark:bg-zinc-800/50 aura:bg-zinc-800/50 ruby:bg-zinc-800/50 flex items-center justify-center text-xl">⚡</div>
+ <div className="w-12 h-12 rounded-full bg-slate-100 aura:bg-zinc-800/50 ruby:bg-zinc-900/80 dark:bg-zinc-800/50 aura:bg-zinc-800/50 ruby:bg-zinc-800/50 aura:bg-zinc-800/50 ruby:bg-zinc-800/50 flex items-center justify-center text-xl">⚡</div>
  <span className="font-medium text-lg">Performance</span>
  </motion.div>
 
  <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="hidden md:block w-px h-12 bg-slate-200 dark:bg-zinc-800" />
 
  <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="flex flex-col items-center gap-2">
- <div className="w-12 h-12 rounded-full bg-slate-100 aura:bg-zinc-800/50 ruby:bg-zinc-900/80 dark:bg-zinc-800/50 aura:bg-zinc-800/50 ruby:bg-zinc-800/50 flex items-center justify-center text-xl">📈</div>
+ <div className="w-12 h-12 rounded-full bg-slate-100 aura:bg-zinc-800/50 ruby:bg-zinc-900/80 dark:bg-zinc-800/50 aura:bg-zinc-800/50 ruby:bg-zinc-800/50 aura:bg-zinc-800/50 ruby:bg-zinc-800/50 flex items-center justify-center text-xl">📈</div>
  <span className="font-medium text-lg">Conversão de Contatos</span>
  </motion.div>
  </motion.div>

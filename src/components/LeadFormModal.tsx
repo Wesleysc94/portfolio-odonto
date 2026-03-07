@@ -85,7 +85,7 @@ Detalhes: ${projectDetails}`;
  animate={{ opacity: 1 }}
  exit={{ opacity: 0 }}
  onClick={onClose}
- className="fixed inset-0 bg-slate-900/40 dark:bg-black/80 backdrop-blur-md z-[100]"
+ className="fixed inset-0 bg-slate-900/40 dark:bg-black/80 aura:bg-black/80 ruby:bg-black/80 backdrop-blur-md z-[100]"
  />
 
  {/* Modal */}
@@ -93,11 +93,11 @@ Detalhes: ${projectDetails}`;
  initial={{ opacity: 0, scale: 0.95, y: 20 }}
  animate={{ opacity: 1, scale: 1, y: 0 }}
  exit={{ opacity: 0, scale: 0.95, y: 20 }}
- className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-white dark:bg-[#0a0a0a] aura:bg-[#09090B] ruby:bg-[#050505] rounded-3xl shadow-2xl border border-slate-200 dark:border-white/10 z-[101] p-6 md:p-10 hide-scrollbar"
+ className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-white dark:bg-[#0a0a0a] aura:bg-[#09090B] ruby:bg-[#050505] rounded-3xl shadow-2xl border border-slate-200 dark:border-white/10 aura:border-white/10 ruby:border-white/10 z-[101] p-6 md:p-10 hide-scrollbar"
  >
  <button
  onClick={onClose}
- className="absolute top-6 right-6 p-2 rounded-full bg-slate-100 aura:bg-zinc-800/50 ruby:bg-zinc-900/80 dark:bg-white/5 text-slate-500 dark:text-zinc-400 aura:text-zinc-400 ruby:text-zinc-400 hover:bg-slate-200 dark:hover:bg-white/10 hover:text-slate-800 dark:hover:text-white transition-colors"
+ className="absolute top-6 right-6 p-2 rounded-full bg-slate-100 aura:bg-zinc-800/50 ruby:bg-zinc-900/80 dark:bg-white/5 aura:bg-white/5 ruby:bg-white/5 text-slate-500 dark:text-zinc-400 aura:text-zinc-400 ruby:text-zinc-400 hover:bg-slate-200 dark:hover:bg-white/10 hover:text-slate-800 dark:hover:text-white transition-colors"
  >
  <X className="w-5 h-5" />
  </button>
@@ -154,7 +154,7 @@ Detalhes: ${projectDetails}`;
  <input
  type="text" id="name" name="name" required
  placeholder="Ex: João - Clinica X"
- className="w-full px-4 py-3 bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl focus:ring-2 focus:ring-cyan-500/50 focus:border-cyan-500 aura:border-amber-500 ruby:border-rose-500 outline-none transition-all text-slate-900 dark:text-white aura:text-white ruby:text-white"
+ className="w-full px-4 py-3 bg-slate-50 dark:bg-white/5 aura:bg-white/5 ruby:bg-white/5 border border-slate-200 dark:border-white/10 aura:border-white/10 ruby:border-white/10 rounded-xl focus:ring-2 focus:ring-cyan-500/50 focus:border-cyan-500 aura:border-amber-500 ruby:border-rose-500 outline-none transition-all text-slate-900 dark:text-white aura:text-white ruby:text-white"
  />
  </div>
  <div className="space-y-2">
@@ -162,7 +162,7 @@ Detalhes: ${projectDetails}`;
  <input
  type="email" id="email" name="email" required
  placeholder="joao@empresa.com"
- className="w-full px-4 py-3 bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl focus:ring-2 focus:ring-cyan-500/50 focus:border-cyan-500 aura:border-amber-500 ruby:border-rose-500 outline-none transition-all text-slate-900 dark:text-white aura:text-white ruby:text-white"
+ className="w-full px-4 py-3 bg-slate-50 dark:bg-white/5 aura:bg-white/5 ruby:bg-white/5 border border-slate-200 dark:border-white/10 aura:border-white/10 ruby:border-white/10 rounded-xl focus:ring-2 focus:ring-cyan-500/50 focus:border-cyan-500 aura:border-amber-500 ruby:border-rose-500 outline-none transition-all text-slate-900 dark:text-white aura:text-white ruby:text-white"
  />
  </div>
  </div>
@@ -173,14 +173,14 @@ Detalhes: ${projectDetails}`;
  <input
  type="tel" id="phone" name="phone"
  placeholder="(11) 90000-0000"
- className="w-full px-4 py-3 bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl focus:ring-2 focus:ring-cyan-500/50 focus:border-cyan-500 aura:border-amber-500 ruby:border-rose-500 outline-none transition-all text-slate-900 dark:text-white aura:text-white ruby:text-white"
+ className="w-full px-4 py-3 bg-slate-50 dark:bg-white/5 aura:bg-white/5 ruby:bg-white/5 border border-slate-200 dark:border-white/10 aura:border-white/10 ruby:border-white/10 rounded-xl focus:ring-2 focus:ring-cyan-500/50 focus:border-cyan-500 aura:border-amber-500 ruby:border-rose-500 outline-none transition-all text-slate-900 dark:text-white aura:text-white ruby:text-white"
  />
  </div>
  <div className="space-y-2">
  <label htmlFor="budget" className="text-sm font-sans font-medium text-slate-700 dark:text-zinc-300 aura:text-zinc-300 ruby:text-zinc-300">Estimativa de Investimento</label>
  <select
  id="budget" name="budget" required
- className="w-full px-4 py-3 bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl focus:ring-2 focus:ring-cyan-500/50 focus:border-cyan-500 aura:border-amber-500 ruby:border-rose-500 outline-none transition-all text-slate-900 dark:text-white aura:text-white ruby:text-white appearance-none"
+ className="w-full px-4 py-3 bg-slate-50 dark:bg-white/5 aura:bg-white/5 ruby:bg-white/5 border border-slate-200 dark:border-white/10 aura:border-white/10 ruby:border-white/10 rounded-xl focus:ring-2 focus:ring-cyan-500/50 focus:border-cyan-500 aura:border-amber-500 ruby:border-rose-500 outline-none transition-all text-slate-900 dark:text-white aura:text-white ruby:text-white appearance-none"
  >
  <option value="" disabled selected>Selecione um budget base</option>
  <option value="Landing Page (- VIP)">Landing Page Estratégica</option>
@@ -196,7 +196,7 @@ Detalhes: ${projectDetails}`;
  <textarea
  id="details" name="details" required rows={4}
  placeholder="Nos descreva seus principais problemas hoje (design genérico, falta de clientes, tecnologia lenta) e o que você visualiza como ideal..."
- className="w-full px-4 py-3 bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl focus:ring-2 focus:ring-cyan-500/50 focus:border-cyan-500 aura:border-amber-500 ruby:border-rose-500 outline-none transition-all text-slate-900 dark:text-white aura:text-white ruby:text-white resize-none"
+ className="w-full px-4 py-3 bg-slate-50 dark:bg-white/5 aura:bg-white/5 ruby:bg-white/5 border border-slate-200 dark:border-white/10 aura:border-white/10 ruby:border-white/10 rounded-xl focus:ring-2 focus:ring-cyan-500/50 focus:border-cyan-500 aura:border-amber-500 ruby:border-rose-500 outline-none transition-all text-slate-900 dark:text-white aura:text-white ruby:text-white resize-none"
  />
  </div>
 
