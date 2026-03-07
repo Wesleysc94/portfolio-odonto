@@ -63,7 +63,7 @@ export default function Hero({ onOpenModal }: { onOpenModal?: () => void }) {
                             <div className="absolute inset-0 rounded-full bg-cyan-100/10 dark:bg-white/5 aura:bg-amber-100/5 ruby:bg-rose-100/5 blur-md z-10 pointer-events-none" />
 
                             {/* A Letra W */}
-                            <span className="font-serif text-[3.2rem] md:text-[6.5rem] pr-2 md:pr-4 text-slate-800 dark:text-zinc-100 aura:text-zinc-100 ruby:text-zinc-100 italic relative z-30 transition-transform duration-500 group-hover:scale-105 drop-shadow-sm font-light">
+                            <span className="font-serif text-[4.2rem] md:text-[6.5rem] pr-3 md:pr-4 text-slate-800 dark:text-zinc-100 aura:text-zinc-100 ruby:text-zinc-100 italic relative z-30 transition-transform duration-500 group-hover:scale-105 drop-shadow-sm font-light">
                                 W
                             </span>
                         </motion.div>
