@@ -21,8 +21,8 @@ export default function Hero({ onOpenModal }: { onOpenModal?: () => void }) {
     return (
         <section className="relative min-h-[95vh] md:min-h-[110vh] flex flex-col items-center justify-center px-6 overflow-visible pt-10 pb-20 md:-mb-32 z-20">
 
-            {/* Grade fluida sutilmente realçada no Light e Dark Mode */}
-            <div className="absolute inset-0 w-full h-full bg-[linear-gradient(to_right,#a3a3a330_1px,transparent_1px),linear-gradient(to_bottom,#a3a3a330_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#ffffff15_1px,transparent_1px),linear-gradient(to_bottom,#ffffff15_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:linear-gradient(to_bottom,transparent_0%,black_15%,black_85%,transparent_100%)] animate-gridFlow pointer-events-none z-0" />
+            {/* Grade fluida perfeitamente equilibrada no Light e Dark Mode (Ponto ideal de visibilidade sutil) */}
+            <div className="absolute inset-0 w-full h-full bg-[linear-gradient(to_right,#a3a3a315_1px,transparent_1px),linear-gradient(to_bottom,#a3a3a315_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:linear-gradient(to_bottom,transparent_0%,black_15%,black_85%,transparent_100%)] animate-gridFlow pointer-events-none z-0" />
 
             <div className="z-10 relative max-w-7xl mx-auto mt-20 md:mt-0 w-full">
                 <motion.div
