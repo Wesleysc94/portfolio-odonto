@@ -28,18 +28,18 @@ export default function InstagramButton({ className = '', variant = 'floating' }
         );
     }
 
-    // Variantes de Rodapé (Estilo botão/pílula ou ícone maior)
+    // Variantes de Rodapé (Estilo botão minimalista animado e sem texto)
     return (
         <a
             href="https://instagram.com/wesdigitalstudio"
             target="_blank"
             rel="noopener noreferrer"
-            className={`${baseClasses} px-5 py-2.5 rounded-full border border-slate-200 dark:border-white/10 aura:border-white/10 ruby:border-white/10 bg-white/5 backdrop-blur-md hover:border-transparent ${className}`}
+            title="Acompanhe pelo Instagram"
+            className={`${baseClasses} w-10 h-10 md:w-12 md:h-12 rounded-full border border-slate-200 dark:border-white/5 aura:border-white/5 ruby:border-white/5 bg-transparent backdrop-blur-md hover:border-transparent ${className} animate-[float_4s_ease-in-out_infinite] opacity-60 hover:opacity-100 hover:scale-110 active:scale-95`}
         >
             <div className={`absolute inset-0 rounded-full ${instagramGradient} opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />
-            <span className="relative z-10 flex items-center gap-2 text-slate-600 dark:text-zinc-400 aura:text-zinc-400 ruby:text-zinc-400 group-hover:text-white transition-colors duration-300 font-medium text-sm">
-                <Instagram className="w-4 h-4" />
-                @wesdigitalstudio
+            <span className="relative z-10 flex items-center justify-center text-slate-500 dark:text-zinc-500 aura:text-zinc-500 ruby:text-zinc-500 group-hover:text-white transition-colors duration-300">
+                <Instagram className="w-4 h-4 md:w-5 md:h-5" />
             </span>
         </a>
     );

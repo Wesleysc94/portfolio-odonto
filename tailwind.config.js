@@ -36,12 +36,17 @@ export default {
                 gridFlow: {
                     '0%': { backgroundPosition: '0 0' },
                     '100%': { backgroundPosition: '24px 24px' }
+                },
+                float: {
+                    '0%, 100%': { transform: 'translateY(0)' },
+                    '50%': { transform: 'translateY(-6px)' }
                 }
             },
             animation: {
                 shine: 'shine 1.5s ease-in-out infinite',
                 pulseGlow: 'pulseGlow 3s ease-in-out infinite',
-                gridFlow: 'gridFlow 3s linear infinite'
+                gridFlow: 'gridFlow 3s linear infinite',
+                float: 'float 4s ease-in-out infinite'
             }
         },
     },
