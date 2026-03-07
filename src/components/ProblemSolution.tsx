@@ -10,15 +10,15 @@ export default function ProblemSolution() {
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
-                    transition={{ duration: 0.6 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
                     className="flex flex-col items-start"
                 >
-                    <h2 className="text-3xl md:text-5xl font-serif text-slate-800 dark:text-white mb-8 leading-tight">
-                        Muitos negócios oferecem serviços excelentes, mas possuem uma presença digital que <span className="italic text-teal dark:text-gold">não transmite sua verdadeira qualidade.</span>
+                    <h2 className="text-4xl md:text-6xl lg:text-7xl font-serif text-slate-900 dark:text-white mb-10 leading-[1.05] tracking-tight text-balance">
+                        Muitos negócios oferecem serviços excelentes, mas possuem uma presença que <span className="italic text-cyan-600 dark:text-cyan-400 font-light">não transmite sua verdadeira autoridade.</span>
                     </h2>
 
-                    <p className="text-slate-600 dark:text-zinc-400 font-sans text-lg font-light leading-relaxed mb-8">
-                        Na internet, a primeira impressão acontece antes mesmo do contato. Um site desatualizado ou uma presença digital confusa pode afastar potenciais clientes.
+                    <p className="text-slate-600 dark:text-zinc-400 font-sans text-xl md:text-2xl font-light leading-relaxed mb-8 tracking-wide text-balance">
+                        Na internet, a primeira impressão acontece antes mesmo do contato. Uma presença digital confusa ou amadora afasta potenciais clientes de alto valor.
                     </p>
                 </motion.div>
 

@@ -1,5 +1,9 @@
 import { ExternalLink } from 'lucide-react';
 import { motion, type Variants } from 'framer-motion';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, EffectFade } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/effect-fade';
 
 export default function CaseStudy() {
     // Variantes de texto
@@ -11,6 +15,14 @@ export default function CaseStudy() {
             transition: { duration: 0.8, ease: "easeOut" }
         }
     };
+
+    const caseImages = [
+        "/mockups/versao azul desktop e mobile.PNG",
+        "/mockups/versao dark mobil e desktop.PNG",
+        "/mockups/versao desktopa azul.PNG",
+        "/mockups/versao dark desktop.PNG",
+        "/mockups/versao azul mobile.PNG",
+    ];
 
     return (
         <section id="case-study" className="py-32 md:py-48 px-6 relative max-w-screen-2xl mx-auto overflow-visible z-20">
@@ -29,7 +41,7 @@ export default function CaseStudy() {
                     <h2 className="text-5xl md:text-[6rem] lg:text-[7.5rem] xl:text-[8rem] font-serif text-slate-900 dark:text-zinc-50 mb-10 leading-[0.9] tracking-tighter">
                         <span className="italic font-light">Aura Odonto</span>
                     </h2>
-                    <p className="text-slate-600 dark:text-zinc-400 font-sans text-xl md:text-2xl mb-14 leading-relaxed font-light tracking-wide max-w-xl">
+                    <p className="text-slate-600 dark:text-zinc-400 font-sans text-xl md:text-2xl mb-14 leading-relaxed font-light tracking-wide max-w-xl text-balance">
                         Demonstração de uma plataforma digital desenvolvida para clínicas odontológicas com foco em experiência do usuário, velocidade e máxima conversão de pacientes nas especializações de maior valor agregado.
                     </p>
                     <a
@@ -45,7 +57,6 @@ export default function CaseStudy() {
 
                 {/* Coluna Direita: Imagens/Mockups */}
                 <div className="relative w-full h-full flex justify-center items-center py-10 lg:pl-10">
-                    {/* Prompt de geração de imagem: "modern dental clinic website interface displayed on laptop mockup, elegant UI design, dark premium aesthetic, medical website layout, clean typography, high-end design style, realistic product presentation, soft studio lighting" */}
 
                     {/* Efeito luminoso de fundo para o mockup */}
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] h-[90%] bg-cyan-500/10 dark:bg-cyan-500/20 rounded-full blur-[100px] pointer-events-none" />
@@ -57,16 +68,33 @@ export default function CaseStudy() {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                         className="relative z-10 w-full group"
                     >
-                        <div className="relative rounded-3xl overflow-hidden border border-slate-200/50 dark:border-zinc-800/80 shadow-[0_20px_50px_rgba(8,145,178,0.15)] dark:shadow-[0_20px_50px_rgba(8,145,178,0.2)] group-hover:shadow-[0_30px_60px_rgba(8,145,178,0.25)] dark:group-hover:border-cyan-500/30 transition-all duration-700 ease-out transform group-hover:-translate-y-2 group-hover:scale-[1.02] bg-white/5 dark:bg-black/20 backdrop-blur-sm">
-                            <img
-                                src="/mockups/case_study_mockup.png"
-                                alt="Aura Odonto Premium Dashboard"
-                                className="w-full h-auto object-cover"
-                            />
+                        <div className="relative rounded-3xl overflow-hidden border border-slate-200/50 dark:border-zinc-800/80 shadow-[0_20px_50px_rgba(8,145,178,0.15)] dark:shadow-[0_20px_50px_rgba(8,145,178,0.2)] group-hover:shadow-[0_30px_60px_rgba(8,145,178,0.25)] dark:group-hover:border-cyan-500/30 transition-all duration-700 ease-out transform group-hover:-translate-y-2 group-hover:scale-[1.02] bg-[#f8fbfa] dark:bg-[#0a0a0a] backdrop-blur-sm aspect-[4/3] flex items-center justify-center">
+
+                            <Swiper
+                                modules={[Autoplay, EffectFade]}
+                                effect="fade"
+                                fadeEffect={{ crossFade: true }}
+                                speed={1500}
+                                autoplay={{ delay: 8000, disableOnInteraction: false }}
+                                loop={true}
+                                allowTouchMove={false}
+                                className="w-full h-full"
+                            >
+                                {caseImages.map((img, idx) => (
+                                    <SwiperSlide key={idx} className="w-full h-full flex items-center justify-center bg-transparent">
+                                        <img
+                                            src={img}
+                                            alt={`Aura Odonto Premium Showcase ${idx + 1}`}
+                                            className="w-full h-full object-contain p-4 md:p-8 drop-shadow-2xl"
+                                        />
+                                    </SwiperSlide>
+                                ))}
+                            </Swiper>
+
                             {/* Overlay sutil com texto explicativo na base */}
-                            <div className="absolute inset-x-0 bottom-0 p-6 md:p-8 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col items-start translate-y-4 group-hover:translate-y-0">
+                            <div className="absolute inset-x-0 bottom-0 p-6 md:p-8 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col items-start translate-y-4 group-hover:translate-y-0 z-20 pointer-events-none">
                                 <span className="text-white font-serif text-2xl mb-2">Aura Odonto Clínicas</span>
-                                <span className="text-cyan-400 font-sans text-sm font-light">Visualização de alta resolução do layout desenvolvido focando em agendamentos High-Ticket.</span>
+                                <span className="text-cyan-400 font-sans text-sm font-light">Galeria de visualização de alta resolução (8s Auto-play).</span>
                             </div>
                         </div>
                     </motion.div>

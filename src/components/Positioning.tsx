@@ -13,7 +13,7 @@ export default function Positioning() {
                     <span className="text-cyan-600 dark:text-cyan-400 font-sans font-bold tracking-[0.2em] uppercase text-sm mb-6 block">
                         O Nosso Foco
                     </span>
-                    <h2 className="text-4xl md:text-6xl lg:text-7xl font-serif text-slate-900 dark:text-white mb-10 leading-[1.1] tracking-tight">
+                    <h2 className="text-4xl md:text-6xl lg:text-7xl font-serif text-slate-900 dark:text-white mb-10 leading-[1.1] tracking-tight text-balance">
                         Especialistas em <span className="italic font-light">presença digital</span> para estética premium.
                     </h2>
                 </motion.div>

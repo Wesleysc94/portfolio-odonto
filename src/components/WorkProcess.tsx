@@ -40,7 +40,7 @@ export default function WorkProcess() {
                     transition={{ duration: 0.8 }}
                     className="text-center mb-24"
                 >
-                    <h2 className="text-5xl md:text-7xl lg:text-[5.5rem] font-serif text-slate-900 dark:text-white mb-8 leading-[1.05] tracking-tight">
+                    <h2 className="text-5xl md:text-7xl lg:text-[5.5rem] font-serif text-slate-900 dark:text-white mb-8 leading-[1.05] tracking-tight text-balance">
                         Como <span className="italic text-cyan-600 dark:text-cyan-400 font-light">funciona</span>
                     </h2>
                     <p className="text-slate-600 dark:text-zinc-400 font-sans text-xl md:text-2xl font-light max-w-3xl mx-auto tracking-wide leading-relaxed">

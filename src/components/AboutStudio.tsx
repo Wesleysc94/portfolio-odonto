@@ -8,16 +8,25 @@ export default function AboutStudio() {
 
             <div className="max-w-5xl mx-auto z-10 relative flex flex-col md:flex-row gap-16 md:gap-24 items-center">
 
-                {/* Elemento Visual Emblema/Logo (placeholder premium) */}
+                {/* Elemento Visual Emblema/Logo (Animated Design) */}
                 <motion.div
                     initial={{ opacity: 0, scale: 0.8 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true, margin: "-100px" }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
-                    className="w-48 h-48 md:w-72 md:h-72 flex-shrink-0 rounded-full border border-cyan-600/20 dark:border-cyan-400/20 flex flex-col items-center justify-center relative"
+                    transition={{ duration: 0.8, ease: "easeOut", type: "spring", stiffness: 50 }}
+                    whileHover={{ scale: 1.05 }}
+                    className="w-48 h-48 md:w-72 md:h-72 flex-shrink-0 rounded-full border border-cyan-600/20 dark:border-cyan-400/20 flex flex-col items-center justify-center relative group cursor-default shadow-[0_0_40px_rgba(8,145,178,0.1)] hover:shadow-[0_0_60px_rgba(8,145,178,0.2)]"
                 >
-                    <div className="absolute inset-2 border border-slate-200 dark:border-zinc-800 rounded-full border-dashed animate-[spin_60s_linear_infinite]" />
-                    <span className="font-serif text-6xl md:text-8xl text-slate-900 dark:text-white italic relative z-10">W</span>
+                    <div className="absolute inset-2 border border-cyan-600/30 dark:border-cyan-400/30 rounded-full border-dashed animate-[spin_20s_linear_infinite]" />
+                    <div className="absolute inset-[14px] border border-cyan-500/10 dark:border-cyan-300/10 rounded-full animate-[spin_30s_linear_infinite_reverse]" />
+
+                    <motion.span
+                        animate={{ opacity: [0.7, 1, 0.7] }}
+                        transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                        className="font-serif text-6xl md:text-8xl text-slate-900 dark:text-white italic relative z-10"
+                    >
+                        W
+                    </motion.span>
                     <span className="font-sans text-[10px] md:text-xs tracking-[0.4em] uppercase text-cyan-600 dark:text-cyan-400 mt-4 relative z-10">Studio</span>
                 </motion.div>
 
@@ -29,7 +38,7 @@ export default function AboutStudio() {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="flex flex-col text-center md:text-left"
                 >
-                    <h2 className="text-4xl md:text-6xl font-serif text-slate-900 dark:text-white mb-8 leading-[1.1] tracking-tight">
+                    <h2 className="text-4xl md:text-6xl font-serif text-slate-900 dark:text-white mb-8 leading-[1.1] tracking-tight text-balance">
                         Sobre a <span className="italic text-cyan-600 dark:text-cyan-400 font-light">Wes Digital Studio</span>
                     </h2>
 

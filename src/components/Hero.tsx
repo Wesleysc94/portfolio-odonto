@@ -38,9 +38,9 @@ export default function Hero() {
                     <div className="flex flex-col items-start text-left xl:pr-10 relative z-30">
                         <motion.h1
                             variants={itemVariants}
-                            className="text-5xl md:text-7xl lg:text-[5.5rem] xl:text-[6rem] font-serif text-slate-900 dark:text-white mb-8 tracking-tighter leading-[1.05]"
+                            className="text-[3.5rem] md:text-7xl lg:text-[5.5rem] xl:text-[6rem] font-serif text-slate-900 dark:text-white mb-8 tracking-tighter leading-[1.05] text-balance"
                         >
-                            Interfaces que<br />transformam a<br />presença em <span className="text-cyan-600 dark:text-cyan-400 italic font-light">autoridade.</span>
+                            Interfaces que transformam presença em <span className="text-cyan-600 dark:text-cyan-400 italic font-light whitespace-normal">autoridade.</span>
                         </motion.h1>
 
                         <motion.p
@@ -73,32 +73,23 @@ export default function Hero() {
                         </motion.div>
                     </div>
 
-                    {/* Coluna da Direita: Composição Autoral (Spatial Design Float) utilizando as imagens originais do projeto */}
+                    {/* Coluna da Direita: Composição Autoral Clean */}
                     <motion.div
                         variants={itemVariants}
                         className="relative w-full h-full flex justify-center items-center py-20 lg:py-0 pointer-events-none"
                     >
-                        <div className="relative w-full max-w-[600px] h-full min-h-[500px] lg:scale-110 xl:scale-125 xl:translate-x-10 translate-y-10 lg:translate-y-24 z-20">
+                        <div className="relative w-full max-w-[500px] h-full min-h-[500px] lg:scale-125 xl:scale-[1.35] xl:translate-x-10 translate-y-10 lg:translate-y-24 z-20 flex justify-center items-center">
 
-                            {/* Efeito Deep Glow Radial atrás da composição principal */}
+                            {/* Efeito Deep Glow Radial atrás do Mockup */}
                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-cyan-500/20 dark:bg-cyan-500/10 rounded-full blur-[100px] pointer-events-none" />
 
-                            {/* Main Screen: Imagem Principal Original */}
+                            {/* Main Screen: Single Imagem Original (Conforme pedido) */}
                             <motion.img
-                                animate={{ y: [0, -15, 0] }}
-                                transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
-                                src="/mockups/IMG_3927.PNG"
-                                alt="Main Project Interface"
-                                className="absolute right-[5%] top-[10%] w-[85%] rounded-[2rem] shadow-[0_40px_80px_-20px_rgba(0,0,0,0.3)] border-[4px] border-white/40 dark:border-white/10"
-                            />
-
-                            {/* Secondary Screen: Imagem Secundária Original sobreposta */}
-                            <motion.img
-                                animate={{ y: [0, -25, 0] }}
-                                transition={{ duration: 9, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                                src="/mockups/IMG_3941.PNG"
+                                animate={{ y: [0, -20, 0] }}
+                                transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+                                src="/mockups/dupla versao mobile.PNG"
                                 alt="Mobile Project Interface"
-                                className="absolute left-[0%] bottom-[10%] w-[45%] rounded-[2rem] shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)] border-[4px] border-white/60 dark:border-white/20 z-30"
+                                className="relative z-30 w-[90%] rounded-[2rem] shadow-[0_40px_80px_-20px_rgba(0,0,0,0.5)] border-[4px] border-white/40 dark:border-white/10"
                             />
                         </div>
                     </motion.div>
