@@ -6,13 +6,13 @@ export default function FooterCTA({ onOpenModal }: { onOpenModal?: () => void })
     return (
         <footer id="footer-cta" className="relative mt-10 py-20 px-6 overflow-hidden">
             {/* Background Section-Specific */}
-            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-[80vw] h-[80vw] max-w-[600px] max-h-[600px] bg-cyan-600/5 aura:bg-amber-600/5 ruby:bg-rose-700/5 rounded-full blur-[100px] pointer-events-none" />
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-[80vw] h-[80vw] max-w-[600px] max-h-[600px] bg-cyan-600/5 aura:bg-amber-600/5 ruby:bg-rose-700/5 rounded-full blur-2xl md:blur-[100px] opacity-40 md:opacity-100 pointer-events-none" />
 
             <motion.div
-                initial={{ opacity: 0, scale: 0.95, y: 30 }}
+                initial={{ opacity: 0, scale: 0.95, y: 20 }}
                 whileInView={{ opacity: 1, scale: 1, y: 0 }}
                 viewport={{ once: true, margin: "0px" }}
-                transition={{ duration: 0.5, ease: "easeOut" }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
                 className="max-w-4xl mx-auto flex flex-col items-center text-center z-10 relative"
             >
                 <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-serif text-slate-800 dark:text-white aura:text-white ruby:text-white mb-6 md:mb-8 leading-tight ">

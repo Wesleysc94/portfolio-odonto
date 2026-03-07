@@ -24,14 +24,14 @@ export default function ProblemSolution() {
 
                 {/* A Solução */}
                 <motion.div
-                    initial={{ opacity: 0, y: 30 }}
+                    initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "0px" }}
                     transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
                     className="relative group cursor-default"
                 >
-                    <div className="absolute -inset-4 bg-cyan-900/10 dark:bg-cyan-500/10 aura:bg-amber-500/10 ruby:bg-rose-600/10 blur-xl rounded-[2.5rem] -z-10" />
-                    <div className="bg-white/80 dark:bg-zinc-900/60 aura:bg-[#0a0a0a]/80 ruby:bg-[#0a0a0a]/80 backdrop-blur-xl p-10 md:p-14 lg:p-16 rounded-[2.5rem] border border-slate-200/60 dark:border-white/10 aura:border-white/10 ruby:border-white/10 flex flex-col gap-6 text-center md:text-left transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-[0_10px_40px_-5px_rgba(0,0,0,0.1)] dark:group-hover:shadow-[0_10px_40px_-5px_rgba(0,0,0,0.3)]">
+                    <div className="absolute -inset-4 bg-cyan-900/10 dark:bg-cyan-500/10 aura:bg-amber-500/10 ruby:bg-rose-600/10 blur-xl md:blur-2xl opacity-50 md:opacity-100 rounded-[2.5rem] -z-10" />
+                    <div className="bg-white/90 dark:bg-zinc-900/80 aura:bg-[#0a0a0a]/90 ruby:bg-[#0a0a0a]/90 backdrop-blur-sm lg:backdrop-blur-md p-10 md:p-14 lg:p-16 rounded-[2.5rem] border border-slate-200/60 dark:border-white/10 aura:border-white/10 ruby:border-white/10 flex flex-col gap-6 text-center md:text-left transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-[0_10px_40px_-5px_rgba(0,0,0,0.1)] dark:group-hover:shadow-[0_10px_40px_-5px_rgba(0,0,0,0.3)]">
                         <div className="w-16 h-16 rounded-2xl bg-cyan-50 dark:bg-cyan-900/30 text-cyan-600 aura:text-amber-500 ruby:text-rose-600 dark:text-cyan-400 aura:text-amber-400 ruby:text-rose-400 flex items-center justify-center mb-2 mx-auto md:mx-0 shadow-sm dark:shadow-none transition-transform duration-500 group-hover:scale-110">
                             <span className="text-2xl font-serif italic">W</span>
                         </div>

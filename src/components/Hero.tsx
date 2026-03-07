@@ -34,26 +34,29 @@ export default function Hero({ onOpenModal }: { onOpenModal?: () => void }) {
                     <div className="flex flex-col items-center md:items-start text-center md:text-left xl:pr-10 relative z-30 w-full">
 
                         {/* --- NOVO EMBLEMA W ANIMADO --- */}
-                        <div
-                            className="w-20 h-20 md:w-28 md:h-28 mb-6 md:mb-8 flex-shrink-0 rounded-full border border-cyan-200/50 dark:border-cyan-800/40 bg-white/50 dark:bg-[#0a0a0a]/50 aura:bg-[#09090B]/50 ruby:bg-[#050505]/50 backdrop-blur-md flex flex-col items-center justify-center relative group cursor-default shadow-lg transition-shadow duration-500 mx-auto md:mx-0"
+                        <motion.div
+                            variants={{
+                                hidden: { opacity: 0, scale: 0.8 },
+                                visible: { opacity: 1, scale: 1, transition: { duration: 0.8, ease: "easeOut" } }
+                            }}
+                            className="w-20 h-20 md:w-24 md:h-24 mb-10 md:mb-12 flex-shrink-0 rounded-full border border-cyan-200/50 dark:border-cyan-800/40 aura:border-amber-500/30 ruby:border-rose-500/30 bg-white/80 dark:bg-[#0a0a0a]/80 aura:bg-[#09090B]/80 ruby:bg-[#050505]/80 backdrop-blur-md flex flex-col items-center justify-center relative shadow-[0_4px_30px_-5px_rgba(8,145,178,0.15)] dark:shadow-[0_4px_30px_-5px_rgba(8,145,178,0.2)] aura:shadow-[0_4px_30px_-5px_rgba(245,158,11,0.15)] ruby:shadow-[0_4px_30px_-5px_rgba(225,29,72,0.15)] mx-auto md:mx-0 animate-pulseGlow"
                         >
-                            <div className="absolute inset-1 border border-cyan-400 dark:border-cyan-500 aura:border-amber-500 ruby:border-rose-500 rounded-full border-dashed animate-[spin_20s_linear_infinite]" />
-                            <div className="absolute inset-[8px] border border-cyan-300/30 dark:border-cyan-400/30 rounded-full animate-[spin_30s_linear_infinite_reverse]" />
-                            <span className="font-serif text-3xl md:text-5xl text-slate-900 dark:text-white aura:text-white ruby:text-white italic relative z-10 opacity-90 transition-opacity">
+                            <div className="absolute -inset-2 border border-cyan-400/20 dark:border-cyan-500/20 aura:border-amber-500/20 ruby:border-rose-500/20 rounded-full opacity-50" />
+                            <span className="font-serif text-3xl md:text-4xl text-slate-900 dark:text-white aura:text-white ruby:text-white italic relative z-10 opacity-90 drop-shadow-md">
                                 W
                             </span>
-                        </div>
+                        </motion.div>
                         {/* --- FIM DO EMBLEMA --- */}
                         <motion.h1
                             variants={itemVariants}
-                            className="text-4xl sm:text-5xl md:text-7xl lg:text-[5.5rem] xl:text-[6rem] font-serif text-slate-900 dark:text-white aura:text-white ruby:text-white mb-6 md:mb-8 tracking-tighter leading-[1.1] md:leading-[1.05]"
+                            className="text-4xl sm:text-5xl md:text-7xl lg:text-[5.5rem] xl:text-[6rem] font-serif text-slate-900 dark:text-white aura:text-white ruby:text-white mb-8 md:mb-12 tracking-tighter leading-[1.1] md:leading-[1.05]"
                         >
                             Interfaces que transformam presença em <span className="text-cyan-600 aura:text-amber-500 ruby:text-rose-600 dark:text-cyan-400 aura:text-amber-400 ruby:text-rose-400 italic font-light whitespace-normal">autoridade.</span>
                         </motion.h1>
 
                         <motion.p
                             variants={itemVariants}
-                            className="text-base sm:text-lg md:text-xl xl:text-2xl text-slate-600 dark:text-zinc-400 aura:text-zinc-400 ruby:text-zinc-400 font-sans max-w-xl mb-10 md:mb-14 font-light leading-relaxed tracking-wide mx-auto md:mx-0"
+                            className="text-base sm:text-lg md:text-xl xl:text-2xl text-slate-600 dark:text-zinc-400 aura:text-zinc-400 ruby:text-zinc-400 font-sans max-w-xl mb-12 md:mb-16 font-light leading-relaxed tracking-wide mx-auto md:mx-0"
                         >
                             O padrão ouro do web design para empresas premium. Projetos desenhados para alta conversão através de gatilhos visuais e engenharia de ponta.
                         </motion.p>
@@ -72,9 +75,9 @@ export default function Hero({ onOpenModal }: { onOpenModal?: () => void }) {
                         </motion.div>
 
                         {/* Imagem APENAS no Mobile, inserida após botões */}
-                        <motion.div variants={itemVariants} className="flex lg:hidden relative w-full justify-center items-center pointer-events-none mt-6">
-                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] h-[90%] bg-cyan-400/5 dark:bg-cyan-500/10 aura:bg-amber-500/10 ruby:bg-rose-600/10 rounded-full blur-[60px]" />
-                            <img src="/mockups/dupla versao mobile.PNG" alt="Mobile UI Desktop" className="relative z-30 w-full max-w-[340px] rounded-[2rem] shadow-2xl border-[3px] border-white/40 dark:border-white/10 aura:border-white/10 ruby:border-white/10" />
+                        <motion.div variants={itemVariants} className="flex lg:hidden relative w-full justify-center items-center pointer-events-none mt-8">
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-cyan-400/5 dark:bg-cyan-500/5 aura:bg-amber-500/5 ruby:bg-rose-600/5 rounded-full blur-[40px] z-0" />
+                            <img src="/mockups/dupla versao mobile.PNG" alt="Mobile UI Desktop" loading="lazy" className="relative z-30 w-full max-w-[340px] rounded-[2rem] shadow-xl border-[3px] border-white/30 dark:border-white/10 aura:border-white/10 ruby:border-white/10 opacity-90" />
                         </motion.div>
                     </div>
 

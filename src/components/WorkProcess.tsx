@@ -8,7 +8,7 @@ export default function WorkProcess() {
    };
 
    const stepVariants: Variants = {
-      hidden: { opacity: 0, y: 30 },
+      hidden: { opacity: 0, y: 20 },
       visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
    };
 
@@ -34,7 +34,7 @@ export default function WorkProcess() {
       <section className="py-24 md:py-32 px-6 relative w-full overflow-visible z-10">
          <div className="max-w-6xl mx-auto z-10 relative">
             <motion.div
-               initial={{ opacity: 0, y: 30 }}
+               initial={{ opacity: 0, y: 20 }}
                whileInView={{ opacity: 1, y: 0 }}
                viewport={{ once: true, margin: "0px" }}
                transition={{ duration: 0.6, ease: "easeOut" }}
@@ -60,7 +60,7 @@ export default function WorkProcess() {
 
                {steps.map((step, index) => (
                   <motion.div key={index} variants={stepVariants} className="flex flex-col items-center text-center group cursor-default">
-                     <div className="w-24 h-24 rounded-full bg-cyan-50 dark:bg-zinc-900/50 aura:bg-[#0a0a0a]/80 ruby:bg-[#0a0a0a]/80 flex items-center justify-center mb-8 transition-transform duration-500 group-hover:-translate-y-2 border border-slate-200/60 dark:border-white/10 aura:border-white/10 ruby:border-white/10 text-cyan-600 aura:text-amber-500 ruby:text-rose-600 dark:text-cyan-400 aura:text-amber-400 ruby:text-rose-400 backdrop-blur-md shadow-sm dark:shadow-none group-hover:scale-110">
+                     <div className="w-24 h-24 rounded-full bg-cyan-50 dark:bg-zinc-900/50 aura:bg-[#0a0a0a]/80 ruby:bg-[#0a0a0a]/80 flex items-center justify-center mb-8 transition-transform duration-500 group-hover:-translate-y-2 border border-slate-200/60 dark:border-white/10 aura:border-white/10 ruby:border-white/10 text-cyan-600 aura:text-amber-500 ruby:text-rose-600 dark:text-cyan-400 aura:text-amber-400 ruby:text-rose-400 backdrop-blur-sm shadow-sm dark:shadow-none group-hover:scale-110">
                         <step.icon className="w-10 h-10 stroke-[1.5]" />
                      </div>
                      <h3 className="text-xl md:text-2xl font-serif font-semibold text-slate-900 dark:text-white aura:text-white ruby:text-white mb-4 tracking-tight">{step.title}</h3>

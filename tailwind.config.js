@@ -24,6 +24,19 @@ export default {
             fontFamily: {
                 sans: ['Outfit', 'Inter', 'sans-serif'],
                 serif: ['Playfair Display', 'serif'],
+            },
+            keyframes: {
+                shine: {
+                    '100%': { transform: 'translateX(200%) skewX(-12deg)' }
+                },
+                pulseGlow: {
+                    '0%, 100%': { transform: 'scale(1)', opacity: '0.8' },
+                    '50%': { transform: 'scale(1.05)', opacity: '1' }
+                }
+            },
+            animation: {
+                shine: 'shine 1.5s ease-in-out infinite',
+                pulseGlow: 'pulseGlow 3s ease-in-out infinite'
             }
         },
     },

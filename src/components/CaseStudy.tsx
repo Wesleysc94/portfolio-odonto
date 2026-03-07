@@ -61,10 +61,10 @@ export default function CaseStudy() {
                 <div className="relative w-full h-full flex justify-center items-center py-10 lg:pl-10">
 
                     {/* Efeito luminoso de fundo para a Imagem Direta */}
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100%] h-[100%] bg-cyan-400/10 dark:bg-cyan-500 aura:bg-amber-500 ruby:bg-rose-600 rounded-full blur-[60px] md:blur-[100px] pointer-events-none" />
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100%] h-[100%] bg-cyan-400/10 dark:bg-cyan-500 aura:bg-amber-500 ruby:bg-rose-600 rounded-full blur-[40px] md:blur-[100px] opacity-40 md:opacity-100 pointer-events-none" />
 
                     <motion.div
-                        initial={{ opacity: 0, scale: 0.95, y: 30 }}
+                        initial={{ opacity: 0, scale: 0.95, y: 20 }}
                         whileInView={{ opacity: 1, scale: 1, y: 0 }}
                         viewport={{ once: true, margin: "0px" }}
                         transition={{ duration: 0.5, ease: "easeOut" }}
@@ -91,6 +91,7 @@ export default function CaseStudy() {
                                         <img
                                             src={img}
                                             alt={`Aura Odonto Premium Showcase ${idx + 1}`}
+                                            loading="lazy"
                                             className="w-full h-full object-contain drop-shadow-2xl"
                                         />
                                     </SwiperSlide>

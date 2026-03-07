@@ -21,8 +21,8 @@ export default function Solutions() {
             <div className="absolute inset-0 w-full h-full bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:linear-gradient(to_bottom,transparent_0%,black_15%,black_85%,transparent_100%)] pointer-events-none" />
 
             {/* Ambient Background Lights - Extended (Otimizado p/ Contrast e GPU) */}
-            <div className="absolute top-1/2 left-0 w-[400px] h-[400px] md:w-[800px] md:h-[800px] bg-cyan-600/5 aura:bg-amber-600/5 ruby:bg-rose-700/5 rounded-full blur-[100px] -translate-y-1/2 -translate-x-1/2 pointer-events-none" />
-            <div className="absolute top-1/2 right-0 w-[400px] h-[400px] md:w-[800px] md:h-[800px] bg-indigo-500/5 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 pointer-events-none" />
+            <div className="absolute top-1/2 left-0 w-[400px] h-[400px] md:w-[800px] md:h-[800px] bg-cyan-600/5 aura:bg-amber-600/5 ruby:bg-rose-700/5 rounded-full blur-2xl md:blur-[100px] opacity-40 md:opacity-100 -translate-y-1/2 -translate-x-1/2 pointer-events-none" />
+            <div className="absolute top-1/2 right-0 w-[400px] h-[400px] md:w-[800px] md:h-[800px] bg-indigo-500/5 rounded-full blur-2xl md:blur-[100px] opacity-40 md:opacity-100 -translate-y-1/2 translate-x-1/2 pointer-events-none" />
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
                 <motion.div
@@ -30,7 +30,7 @@ export default function Solutions() {
                     whileInView="visible"
                     viewport={{ once: true, margin: "0px" }}
                     variants={{
-                        hidden: { opacity: 0, y: 30 },
+                        hidden: { opacity: 0, y: 20 },
                         visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
                     }}
                     className="text-center mb-24 md:mb-32 relative z-10"
@@ -53,7 +53,7 @@ export default function Solutions() {
                     {/* Card 1: Website Institucional */}
                     <motion.div
                         variants={cardVariants}
-                        className="bg-white/80 dark:bg-zinc-900/60 aura:bg-[#0a0a0a]/80 ruby:bg-[#0a0a0a]/80 backdrop-blur-xl p-10 md:p-14 lg:p-16 rounded-[2.5rem] border border-slate-200/60 dark:border-white/10 aura:border-white/10 ruby:border-white/10 flex flex-col items-start gap-8 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_10px_40px_-5px_rgba(0,0,0,0.1)] dark:hover:shadow-[0_10px_40px_-5px_rgba(0,0,0,0.3)] group cursor-default"
+                        className="bg-white/90 dark:bg-zinc-900/80 aura:bg-[#0a0a0a]/90 ruby:bg-[#0a0a0a]/90 backdrop-blur-sm lg:backdrop-blur-md p-10 md:p-14 lg:p-16 rounded-[2.5rem] border border-slate-200/60 dark:border-white/10 aura:border-white/10 ruby:border-white/10 flex flex-col items-start gap-8 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_10px_40px_-5px_rgba(0,0,0,0.1)] dark:hover:shadow-[0_10px_40px_-5px_rgba(0,0,0,0.3)] group cursor-default"
                     >
                         <div className="w-16 h-16 rounded-2xl bg-cyan-50 dark:bg-cyan-900/30 text-cyan-600 aura:text-amber-500 ruby:text-rose-600 dark:text-cyan-400 aura:text-amber-400 ruby:text-rose-400 flex items-center justify-center shadow-sm dark:shadow-none transition-transform duration-500 group-hover:scale-110">
                             <LayoutDashboard className="w-8 h-8 stroke-[1.5]" />
@@ -70,7 +70,7 @@ export default function Solutions() {
                     {/* Card 2: Landing Page Estratégica */}
                     <motion.div
                         variants={cardVariants}
-                        className="bg-white/80 dark:bg-zinc-900/60 aura:bg-[#0a0a0a]/80 ruby:bg-[#0a0a0a]/80 backdrop-blur-xl p-10 md:p-14 lg:p-16 rounded-[2.5rem] border border-slate-200/60 dark:border-white/10 aura:border-white/10 ruby:border-white/10 flex flex-col items-start gap-8 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_10px_40px_-5px_rgba(0,0,0,0.1)] dark:hover:shadow-[0_10px_40px_-5px_rgba(0,0,0,0.3)] group cursor-default"
+                        className="bg-white/90 dark:bg-zinc-900/80 aura:bg-[#0a0a0a]/90 ruby:bg-[#0a0a0a]/90 backdrop-blur-sm lg:backdrop-blur-md p-10 md:p-14 lg:p-16 rounded-[2.5rem] border border-slate-200/60 dark:border-white/10 aura:border-white/10 ruby:border-white/10 flex flex-col items-start gap-8 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_10px_40px_-5px_rgba(0,0,0,0.1)] dark:hover:shadow-[0_10px_40px_-5px_rgba(0,0,0,0.3)] group cursor-default"
                     >
                         <div className="w-16 h-16 rounded-2xl bg-cyan-50 dark:bg-cyan-900/30 text-cyan-600 aura:text-amber-500 ruby:text-rose-600 dark:text-cyan-400 aura:text-amber-400 ruby:text-rose-400 flex items-center justify-center shadow-sm dark:shadow-none transition-transform duration-500 group-hover:scale-110">
                             <Target className="w-8 h-8 stroke-[1.5]" />
