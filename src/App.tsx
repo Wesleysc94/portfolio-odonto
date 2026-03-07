@@ -8,6 +8,7 @@ import WorkProcess from './components/WorkProcess';
 import AboutStudio from './components/AboutStudio';
 import FooterCTA from './components/FooterCTA';
 import LeadFormModal from './components/LeadFormModal';
+import BackToTop from './components/BackToTop';
 import { useState } from 'react';
 
 // Divisor premium com GLOW para criar transição suave ("degradê") entre seções
@@ -80,6 +81,8 @@ function App() {
             <FooterCTA onOpenModal={() => setIsLeadModalOpen(true)} />
 
             <LeadFormModal isOpen={isLeadModalOpen} onClose={() => setIsLeadModalOpen(false)} />
+
+            <BackToTop />
         </div>
     );
 }
