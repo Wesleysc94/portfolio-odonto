@@ -8,20 +8,21 @@ type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & React.AnchorH
 };
 
 export default function Button({ children, variant = 'primary', href, className = '', ...props }: ButtonProps) {
-    const baseStyles = "group relative flex items-center justify-center px-8 md:px-10 py-4 md:py-5 rounded-full font-sans whitespace-nowrap overflow-hidden transition-all duration-500 hover:-translate-y-1";
+    const baseStyles = "group relative flex items-center justify-center px-8 md:px-10 py-4 md:py-5 rounded-full font-sans font-bold tracking-[0.2em] uppercase text-xs md:text-sm whitespace-nowrap overflow-hidden transition-all duration-500 hover:-translate-y-1 shadow-lg";
 
     // Primary: Adapts to theme (Dark default, Aura = Gold, Ruby = Red)
     // - Light/Dark default: bg-zinc-900 text-white
-    // - Aura (Gold): bg-amber-500 text-zinc-950 font-semibold tracking-wide
-    // - Ruby: bg-rose-600 text-white font-medium tracking-wide
-    const primaryStyles = "bg-zinc-900 text-white font-bold tracking-[0.2em] uppercase text-xs md:text-sm shadow-[0_4px_20px_-5px_rgba(0,0,0,0.5)] border border-white/5 " +
-        "hover:shadow-[0_10px_40px_-10px_rgba(8,145,178,0.4)] hover:border-cyan-500/50 hover:bg-zinc-800 " +
-        "aura:bg-amber-500 aura:text-zinc-950 aura:font-semibold aura:tracking-wide aura:text-sm md:aura:text-base aura:hover:shadow-[0_10px_40px_-10px_rgba(245,158,11,0.5)] aura:hover:bg-amber-400 aura:border-transparent " +
-        "ruby:bg-rose-600 ruby:text-white ruby:font-medium ruby:tracking-wide ruby:text-sm md:ruby:text-base ruby:hover:shadow-[0_10px_40px_-10px_rgba(225,29,72,0.5)] ruby:hover:bg-rose-500 ruby:border-transparent";
+    // - Aura (Gold): bg-amber-500 text-zinc-950
+    // - Ruby: bg-rose-600 text-white
+    const primaryStyles = "bg-zinc-900 text-white border border-white/5 " +
+        "hover:border-cyan-500/50 hover:bg-zinc-800 hover:shadow-[0_10px_40px_-10px_rgba(8,145,178,0.4)] " +
+        "aura:bg-amber-500 aura:text-zinc-950 aura:border-transparent aura:hover:bg-amber-400 aura:hover:shadow-[0_10px_40px_-10px_rgba(245,158,11,0.5)] " +
+        "ruby:bg-rose-600 ruby:text-white ruby:border-transparent ruby:hover:bg-rose-500 ruby:hover:shadow-[0_10px_40px_-10px_rgba(225,29,72,0.5)]";
 
-    // Outline: Minimal border
-    const outlineStyles = "bg-transparent border border-slate-300 dark:border-zinc-800 text-slate-700 dark:text-zinc-200 font-bold tracking-[0.2em] uppercase text-xs md:text-sm " +
-        "hover:bg-slate-100 dark:hover:bg-zinc-800/80 hover:border-cyan-500/50 aura:hover:border-amber-500/50 ruby:hover:border-rose-500/50 " +
+    // Outline: Minimal border, adapts text color to theme background (dark text and dark border on light mode, light text/border on dark modes)
+    const outlineStyles = "bg-transparent border border-slate-300 dark:border-zinc-700 aura:border-zinc-700 ruby:border-zinc-700 text-slate-800 dark:text-zinc-100 aura:text-zinc-100 ruby:text-zinc-100 " +
+        "hover:bg-slate-100 dark:hover:bg-zinc-800/80 aura:hover:bg-zinc-800/80 ruby:hover:bg-zinc-800/80 " +
+        "hover:border-cyan-500/50 dark:hover:border-cyan-500/50 aura:hover:border-amber-500/50 ruby:hover:border-rose-500/50 " +
         "hover:shadow-[0_10px_40px_-10px_rgba(8,145,178,0.2)] aura:hover:shadow-[0_10px_40px_-10px_rgba(245,158,11,0.15)] ruby:hover:shadow-[0_10px_40px_-10px_rgba(225,29,72,0.15)]";
 
     const styles = `${baseStyles} ${variant === 'primary' ? primaryStyles : outlineStyles} ${className}`;
