@@ -32,11 +32,16 @@ export default {
                 pulseGlow: {
                     '0%, 100%': { transform: 'scale(1)', opacity: '0.8' },
                     '50%': { transform: 'scale(1.05)', opacity: '1' }
+                },
+                gridFlow: {
+                    '0%': { backgroundPosition: '0 0' },
+                    '100%': { backgroundPosition: '24px 24px' }
                 }
             },
             animation: {
                 shine: 'shine 1.5s ease-in-out infinite',
-                pulseGlow: 'pulseGlow 3s ease-in-out infinite'
+                pulseGlow: 'pulseGlow 3s ease-in-out infinite',
+                gridFlow: 'gridFlow 25s linear infinite'
             }
         },
     },

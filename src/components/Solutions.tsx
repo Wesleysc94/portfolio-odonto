@@ -18,7 +18,7 @@ export default function Solutions() {
             <div className="absolute inset-0 bg-transparent" />
 
             {/* Tech Grid Background (Subtle) com Fade no Topo e na Base */}
-            <div className="absolute inset-0 w-full h-full bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:linear-gradient(to_bottom,transparent_0%,black_15%,black_85%,transparent_100%)] pointer-events-none" />
+            <div className="absolute inset-0 w-full h-full bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:linear-gradient(to_bottom,transparent_0%,black_15%,black_85%,transparent_100%)] animate-gridFlow pointer-events-none" />
 
             {/* Ambient Background Lights - Extended (Otimizado p/ Contrast e GPU) */}
             <div className="absolute top-1/2 left-0 w-[300px] h-[300px] md:w-[800px] md:h-[800px] bg-cyan-600/5 aura:bg-amber-600/5 ruby:bg-rose-700/5 rounded-full blur-[60px] md:blur-[100px] opacity-10 md:opacity-100 -translate-y-1/2 -translate-x-1/2 pointer-events-none" />

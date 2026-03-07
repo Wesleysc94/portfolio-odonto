@@ -21,7 +21,7 @@ export default function Hero({ onOpenModal }: { onOpenModal?: () => void }) {
         <section className="relative min-h-[95vh] md:min-h-[110vh] flex flex-col items-center justify-center px-6 overflow-visible pt-10 pb-20 md:-mb-32 z-20">
 
             {/* Grade extremamente sutil (removido no modo dark para o aspecto black total Aura) */}
-            <div className="absolute inset-0 w-full h-full bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] dark:bg-transparent bg-[size:24px_24px] pointer-events-none z-0" />
+            <div className="absolute inset-0 w-full h-full bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] dark:bg-transparent bg-[size:24px_24px] animate-gridFlow pointer-events-none z-0" />
 
             <div className="z-10 relative max-w-7xl mx-auto mt-20 md:mt-0 w-full">
                 <motion.div
