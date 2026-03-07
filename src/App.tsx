@@ -9,6 +9,7 @@ import AboutStudio from './components/AboutStudio';
 import FooterCTA from './components/FooterCTA';
 import LeadFormModal from './components/LeadFormModal';
 import BackToTop from './components/BackToTop';
+import InstagramButton from './components/InstagramButton';
 import { useState } from 'react';
 
 // Divisor premium com GLOW para criar transição suave ("degradê") entre seções
@@ -31,11 +32,12 @@ function App() {
 
             <div className="fixed bottom-6 left-0 w-full px-6 z-50 flex justify-between items-end pointer-events-none">
 
-                {/* Toggle Right/Left */}
-                <div className="pointer-events-auto">
+                {/* Controles Canto Esquerdo (Tema + Instagram) */}
+                <div className="pointer-events-auto flex gap-3 md:gap-4 items-center">
                     <div className="glass rounded-full shadow-[0_4px_16px_rgba(0,0,0,0.1)]">
                         <ThemeToggle />
                     </div>
+                    <InstagramButton variant="floating" />
                 </div>
 
                 {/* Whatsapp Right */}

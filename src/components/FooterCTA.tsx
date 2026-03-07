@@ -1,6 +1,7 @@
 import { MessageCircle, FileText } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Button from './Button';
+import InstagramButton from './InstagramButton';
 
 export default function FooterCTA({ onOpenModal }: { onOpenModal?: () => void }) {
     return (
@@ -43,8 +44,11 @@ export default function FooterCTA({ onOpenModal }: { onOpenModal?: () => void })
                     </Button>
                 </div>
 
-                <div className="mt-24 text-slate-500 dark:text-zinc-600 font-sans text-sm">
-                    &copy; {new Date().getFullYear()} Wes Digital Studio - Especialistas em Presença Digital
+                <div className="mt-20 flex flex-col items-center gap-6">
+                    <InstagramButton variant="footer" />
+                    <div className="text-slate-500 dark:text-zinc-600 font-sans text-sm">
+                        &copy; {new Date().getFullYear()} Wes Digital Studio - Especialistas em Presença Digital
+                    </div>
                 </div>
             </motion.div>
         </footer>
