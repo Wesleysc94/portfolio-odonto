@@ -44,7 +44,7 @@ export default function Hero({ onOpenModal }: { onOpenModal?: () => void }) {
                             <div className="absolute inset-0 rounded-full border border-cyan-200/20 dark:border-white/5 aura:border-white/5 ruby:border-white/5 bg-gradient-to-br from-white/60 to-white/10 dark:from-white/5 dark:to-transparent aura:from-amber-100/5 aura:to-transparent ruby:from-rose-100/5 ruby:to-transparent backdrop-blur-2xl shadow-[0_20px_40px_-10px_rgba(0,0,0,0.1)] dark:shadow-[0_20px_40px_-10px_rgba(0,0,0,0.4)] aura:shadow-[0_20px_40px_-10px_rgba(245,158,11,0.1)] ruby:shadow-[0_20px_40px_-10px_rgba(225,29,72,0.1)] z-10 box-border" />
 
                             {/* Anel Externo Refinado (Profundidade sutil) */}
-                            <div className="absolute inset-[2px] md:inset-[3px] rounded-full border border-cyan-400/10 dark:border-white/10 aura:border-amber-500/20 ruby:border-rose-500/20 z-10 pointer-events-none" />
+                            <div className="absolute inset-[2px] md:inset-[3px] rounded-full border border-cyan-700/40 dark:border-cyan-400/40 aura:border-amber-500/20 ruby:border-rose-500/20 z-10 pointer-events-none" />
 
                             {/* Anel Interno Tracejado Suave (Animação Loop Contínua) */}
                             <div className="absolute inset-3 md:inset-4 rounded-full border border-cyan-700/40 dark:border-cyan-400/40 aura:border-amber-500/40 ruby:border-rose-500/40 border-dashed z-20 pointer-events-none animate-[spin_30s_linear_infinite]" />
