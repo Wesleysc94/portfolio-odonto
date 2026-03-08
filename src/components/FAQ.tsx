@@ -34,22 +34,38 @@ function FAQItem({ item, index }: { item: typeof faqData[0]; index: number }) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "0px" }}
             transition={{ duration: 0.4, delay: index * 0.1 }}
-            className="border-b border-slate-200/60 dark:border-white/5 aura:border-white/5 ruby:border-white/5 last:border-b-0"
+            className="border-b border-slate-200/60 dark:border-white/5 aura:border-amber-500/10 ruby:border-rose-500/10 last:border-b-0"
         >
             <button
                 onClick={() => setIsOpen(!isOpen)}
                 className="w-full flex items-center justify-between py-6 md:py-7 text-left group cursor-pointer"
                 aria-expanded={isOpen}
             >
-                <span className="text-lg md:text-xl font-sans font-medium text-slate-800 dark:text-zinc-100 aura:text-zinc-100 ruby:text-zinc-100 pr-8 leading-snug group-hover:text-cyan-600 dark:group-hover:text-cyan-400 aura:group-hover:text-amber-400 ruby:group-hover:text-rose-400 transition-colors duration-300">
-                    {item.question}
-                </span>
+                {/* Colored indicator bar + question text */}
+                <div className="flex items-center gap-4 pr-8">
+                    <div className={`w-1 self-stretch rounded-full transition-all duration-300 flex-shrink-0 ${isOpen
+                            ? 'bg-cyan-500 dark:bg-cyan-400 aura:bg-amber-500 ruby:bg-rose-500'
+                            : 'bg-slate-200 dark:bg-white/10 aura:bg-amber-500/20 ruby:bg-rose-500/20 group-hover:bg-cyan-400 dark:group-hover:bg-cyan-500 aura:group-hover:bg-amber-400 ruby:group-hover:bg-rose-400'
+                        }`} />
+                    <span className={`text-lg md:text-xl font-sans font-medium leading-snug transition-colors duration-300 ${isOpen
+                            ? 'text-cyan-600 dark:text-cyan-400 aura:text-amber-500 ruby:text-rose-500'
+                            : 'text-slate-800 dark:text-zinc-100 aura:text-zinc-100 ruby:text-zinc-100 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 aura:group-hover:text-amber-400 ruby:group-hover:text-rose-400'
+                        }`}>
+                        {item.question}
+                    </span>
+                </div>
                 <motion.div
                     animate={{ rotate: isOpen ? 180 : 0 }}
                     transition={{ duration: 0.3, ease: "easeInOut" }}
-                    className="flex-shrink-0 w-10 h-10 rounded-full bg-slate-100 dark:bg-white/5 aura:bg-white/5 ruby:bg-white/5 flex items-center justify-center group-hover:bg-cyan-50 dark:group-hover:bg-cyan-900/20 aura:group-hover:bg-amber-900/20 ruby:group-hover:bg-rose-900/20 transition-colors duration-300"
+                    className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300 ${isOpen
+                            ? 'bg-cyan-500/10 dark:bg-cyan-500/20 aura:bg-amber-500/20 ruby:bg-rose-500/20'
+                            : 'bg-slate-100 dark:bg-white/5 aura:bg-white/5 ruby:bg-white/5 group-hover:bg-cyan-50 dark:group-hover:bg-cyan-900/20 aura:group-hover:bg-amber-900/20 ruby:group-hover:bg-rose-900/20'
+                        }`}
                 >
-                    <ChevronDown className="w-5 h-5 text-slate-500 dark:text-zinc-400 aura:text-zinc-400 ruby:text-zinc-400 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 aura:group-hover:text-amber-400 ruby:group-hover:text-rose-400 transition-colors duration-300" />
+                    <ChevronDown className={`w-5 h-5 transition-colors duration-300 ${isOpen
+                            ? 'text-cyan-600 dark:text-cyan-400 aura:text-amber-400 ruby:text-rose-400'
+                            : 'text-slate-500 dark:text-zinc-400 aura:text-zinc-400 ruby:text-zinc-400 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 aura:group-hover:text-amber-400 ruby:group-hover:text-rose-400'
+                        }`} />
                 </motion.div>
             </button>
 
@@ -62,7 +78,7 @@ function FAQItem({ item, index }: { item: typeof faqData[0]; index: number }) {
                         transition={{ duration: 0.3, ease: "easeInOut" }}
                         className="overflow-hidden"
                     >
-                        <p className="pb-7 text-base md:text-lg text-slate-600 dark:text-zinc-400 aura:text-zinc-400 ruby:text-zinc-400 font-sans font-light leading-relaxed pr-16">
+                        <p className="pb-7 pl-5 ml-[3px] border-l-2 border-cyan-400/30 dark:border-cyan-500/20 aura:border-amber-500/30 ruby:border-rose-500/30 text-base md:text-lg text-slate-600 dark:text-zinc-400 aura:text-zinc-400 ruby:text-zinc-400 font-sans font-light leading-relaxed pr-16">
                             {item.answer}
                         </p>
                     </motion.div>
@@ -98,7 +114,7 @@ export default function FAQ() {
                 </motion.div>
 
                 {/* FAQ Accordion Container */}
-                <div className="bg-gradient-to-br from-white/70 to-white/20 dark:from-white/[0.03] dark:to-transparent aura:from-amber-100/[0.03] aura:to-transparent ruby:from-rose-100/[0.03] ruby:to-transparent backdrop-blur-2xl rounded-[2rem] border border-slate-200/40 dark:border-white/5 aura:border-white/5 ruby:border-white/5 px-8 md:px-12 shadow-[0_20px_40px_-10px_rgba(0,0,0,0.05)] dark:shadow-[0_20px_40px_-10px_rgba(0,0,0,0.3)]">
+                <div className="bg-gradient-to-br from-white/70 to-white/20 dark:from-white/[0.03] dark:to-transparent aura:from-amber-100/[0.03] aura:to-transparent ruby:from-rose-100/[0.03] ruby:to-transparent backdrop-blur-2xl rounded-[2rem] border border-slate-200/40 dark:border-white/5 aura:border-amber-500/10 ruby:border-rose-500/10 px-8 md:px-12 shadow-[0_20px_40px_-10px_rgba(0,0,0,0.05)] dark:shadow-[0_20px_40px_-10px_rgba(0,0,0,0.3)] aura:shadow-[0_20px_40px_-10px_rgba(245,158,11,0.05)] ruby:shadow-[0_20px_40px_-10px_rgba(225,29,72,0.05)]">
                     {faqData.map((item, index) => (
                         <FAQItem key={index} item={item} index={index} />
                     ))}
