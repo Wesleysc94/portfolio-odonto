@@ -22,7 +22,7 @@ export default function Hero({ onOpenModal }: { onOpenModal?: () => void }) {
     return (
         <section className="relative min-h-[95vh] md:min-h-[110vh] flex flex-col items-center justify-center px-6 overflow-visible pt-10 pb-20 md:-mb-32 z-20">
 
-            /* Background grid pattern with CSS masking for subtle visibility */
+            {/* Background grid pattern with CSS masking for subtle visibility */}
             <div className="absolute inset-0 w-full h-full bg-[linear-gradient(to_right,#a3a3a315_1px,transparent_1px),linear-gradient(to_bottom,#a3a3a315_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:linear-gradient(to_bottom,transparent_0%,black_15%,black_85%,transparent_100%)] animate-gridFlow pointer-events-none z-0" />
 
             <div className="z-10 relative max-w-7xl mx-auto mt-20 md:mt-0 w-full">
