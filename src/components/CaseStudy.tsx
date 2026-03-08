@@ -127,8 +127,8 @@ export default function CaseStudy() {
                                 aria-label={`Ver projeto ${project.name}`}
                             >
                                 <div className={`h-2 rounded-full transition-all duration-500 ${idx === activeIndex
-                                        ? 'w-10 bg-cyan-500 dark:bg-cyan-400 aura:bg-amber-500 ruby:bg-rose-500'
-                                        : 'w-2 bg-slate-300 dark:bg-zinc-700 hover:bg-slate-400 dark:hover:bg-zinc-600'
+                                    ? 'w-10 bg-cyan-500 dark:bg-cyan-400 aura:bg-amber-500 ruby:bg-rose-500'
+                                    : 'w-2 bg-slate-300 dark:bg-zinc-700 hover:bg-slate-400 dark:hover:bg-zinc-600'
                                     }`} />
                             </button>
                         ))}
@@ -185,14 +185,14 @@ export default function CaseStudy() {
                         <div className="flex gap-4 items-center justify-center mt-8">
                             <button
                                 onClick={goToPrev}
-                                className="group flex items-center justify-center w-12 h-12 rounded-full border border-slate-300 dark:border-zinc-700 bg-transparent text-slate-600 dark:text-zinc-400 aura:text-zinc-400 ruby:text-zinc-400 hover:text-cyan-600 aura:hover:text-amber-500 ruby:hover:text-rose-600 dark:hover:text-cyan-400 hover:border-cyan-500 aura:hover:border-amber-500 ruby:hover:border-rose-500 transition-all duration-300"
+                                className="group flex items-center justify-center w-12 h-12 rounded-full border border-slate-300 dark:border-zinc-700 aura:border-amber-500/30 ruby:border-rose-500/30 bg-transparent text-slate-600 dark:text-zinc-400 aura:text-amber-400 ruby:text-rose-400 hover:text-cyan-600 aura:hover:text-amber-500 ruby:hover:text-rose-600 dark:hover:text-cyan-400 hover:border-cyan-500 aura:hover:border-amber-500 ruby:hover:border-rose-500 transition-all duration-300"
                                 aria-label="Projeto anterior"
                             >
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:-translate-x-1 transition-transform"><path d="m15 18-6-6 6-6" /></svg>
                             </button>
                             <button
                                 onClick={goToNext}
-                                className="group flex items-center justify-center w-12 h-12 rounded-full border border-slate-300 dark:border-zinc-700 bg-transparent text-slate-600 dark:text-zinc-400 aura:text-zinc-400 ruby:text-zinc-400 hover:text-cyan-600 aura:hover:text-amber-500 ruby:hover:text-rose-600 dark:hover:text-cyan-400 hover:border-cyan-500 aura:hover:border-amber-500 ruby:hover:border-rose-500 transition-all duration-300"
+                                className="group flex items-center justify-center w-12 h-12 rounded-full border border-slate-300 dark:border-zinc-700 aura:border-amber-500/30 ruby:border-rose-500/30 bg-transparent text-slate-600 dark:text-zinc-400 aura:text-amber-400 ruby:text-rose-400 hover:text-cyan-600 aura:hover:text-amber-500 ruby:hover:text-rose-600 dark:hover:text-cyan-400 hover:border-cyan-500 aura:hover:border-amber-500 ruby:hover:border-rose-500 transition-all duration-300"
                                 aria-label="Próximo projeto"
                             >
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:translate-x-1 transition-transform"><path d="m9 18 6-6-6-6" /></svg>
