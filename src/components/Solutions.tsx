@@ -39,7 +39,7 @@ export default function Solutions() {
                         Soluções de alta performance para <span className="italic text-cyan-600 aura:text-amber-500 ruby:text-rose-600 dark:text-cyan-400 aura:text-amber-400 ruby:text-rose-400 font-light block mt-4">diferentes objetivos.</span>
                     </h2>
                     <p className="text-slate-600 dark:text-zinc-400 aura:text-zinc-400 ruby:text-zinc-400 font-sans text-lg sm:text-xl md:text-2xl font-light max-w-3xl mx-auto leading-relaxed tracking-wide">
-                        Ajudamos sua empresa a decolar na web combinando design premium com engenharia focada na conversão de leads.
+                        Design premium aliado a engenharia estratégica para posicionar sua empresa como referência no seu mercado.
                     </p>
                 </motion.div>
 

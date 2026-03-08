@@ -44,10 +44,10 @@ export default function AboutStudio() {
 
                     <div className="space-y-6 md:space-y-8 text-slate-600 dark:text-zinc-400 aura:text-zinc-400 ruby:text-zinc-400 font-sans text-lg sm:text-xl md:text-2xl font-light leading-relaxed tracking-wide ">
                         <p>
-                            A Wes Digital Studio foi criada com o objetivo de ajudar empresas a transmitir <strong className="font-semibold text-slate-800 dark:text-zinc-200 aura:text-zinc-200 ruby:text-zinc-200">autoridade implacável</strong> na internet através de interfaces modernas, responsivas e altamente estruturadas.
+                            A Wes Digital Studio foi criada com o objetivo de ajudar empresas a transmitir <strong className="font-semibold text-slate-800 dark:text-zinc-200 aura:text-zinc-200 ruby:text-zinc-200">autoridade absoluta</strong> na internet através de interfaces modernas, responsivas e altamente estruturadas.
                         </p>
                         <p>
-                            Acreditamos que um site não deve apenas existir online como um folheto, mas sim encarnar a excelência do seu negócio, arquitetando confiança instantânea e forçando interações cognitivas e de conversão de leads automatizados.
+                            Acreditamos que um site não deve apenas existir online como um folheto, mas sim encarnar a excelência do seu negócio — arquitetando confiança instantânea e conduzindo o visitante naturalmente até a conversão.
                         </p>
                     </div>
                 </motion.div>

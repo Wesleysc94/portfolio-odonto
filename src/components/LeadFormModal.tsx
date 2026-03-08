@@ -183,11 +183,11 @@ Detalhes: ${projectDetails}`;
                                             id="budget" name="budget" required
                                             className="w-full px-4 py-3 bg-white dark:bg-white/5 aura:bg-white/5 ruby:bg-white/5 border border-slate-300 dark:border-white/10 aura:border-white/10 ruby:border-white/10 rounded-xl focus:ring-2 focus:ring-cyan-500/50 focus:border-cyan-500 aura:focus:border-amber-500 ruby:focus:border-rose-500 outline-none transition-all text-slate-900 dark:text-white aura:text-white ruby:text-white placeholder:text-slate-400 dark:placeholder:text-zinc-500 aura:placeholder:text-zinc-500 ruby:placeholder:text-zinc-500 shadow-sm appearance-none"
                                         >
-                                            <option value="" disabled selected>Selecione um budget base</option>
-                                            <option value="Landing Page (- VIP)">Landing Page Estratégica</option>
-                                            <option value="Website Institucional">Website Institucional Completo</option>
-                                            <option value="E-commerce / Sistema">E-commerce / Aplicação Web</option>
-                                            <option value="Redesign / Otimização">Quero remodelar meu design atual</option>
+                                            <option value="" disabled selected>Selecione uma faixa de investimento</option>
+                                            <option value="Landing Page (a partir de R$1.500)">Landing Page Estratégica (a partir de R$1.500)</option>
+                                            <option value="Website Institucional (a partir de R$3.000)">Website Institucional Completo (a partir de R$3.000)</option>
+                                            <option value="E-commerce / Sistema (a partir de R$5.000)">E-commerce / Aplicação Web (a partir de R$5.000)</option>
+                                            <option value="Redesign / Otimização (sob consulta)">Redesign / Otimização (sob consulta)</option>
                                         </select>
                                     </div>
                                 </div>
@@ -212,7 +212,7 @@ Detalhes: ${projectDetails}`;
                                 </Button>
 
                                 <p className="text-center text-xs text-slate-500 dark:text-zinc-50 aura:text-slate-50 ruby:text-slate-50 mt-4">
-                                    Seus dados estão protegidos. Logo após o envio enviaremos seu caso diretamente para o seu e-mail e nosso WhatsApp de triagem.
+                                    Seus dados estão protegidos. Após o envio, analisaremos seu projeto e entraremos em contato pelo canal de sua preferência.
                                 </p>
                             </form>
                         )}

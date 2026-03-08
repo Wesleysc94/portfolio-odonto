@@ -26,7 +26,7 @@ export default function WorkProcess() {
       {
          icon: Rocket,
          title: "3. Lançamento e Escala",
-         desc: "Seu portal interativo no ar com performance extrema e segurança constante."
+         desc: "Seu projeto no ar com performance otimizada, hospedagem profissional e suporte contínuo."
       }
    ];
 
